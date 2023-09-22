@@ -1,0 +1,16 @@
+
+
+
+
+/* exibir as mensagens conforme o formulário for preenchido 
+o seletor de sibling (irmão, no caso), usando o símbolo de adição + */
+
+
+/* media orientantion landscape (largura > altura) => celular deitado
+@media (orientation:landscape) */
+
+/* screen aplicado a telas
+print quando quero imprimir 
+speech reconhecimento de falas 
+se não passo, então ele entende que é all
+*/
