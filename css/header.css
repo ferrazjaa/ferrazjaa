@@ -1,18 +1,37 @@
 header{
-    background-color: aquamarine;
-    padding:5%;
+    border: solid;
+    width: 100%;
+    padding:10%; 
     display: flex;
     justify-content: space-between;
 }
 
-nav{
+nav ul{
     flex-direction: column;
+    margin-right:1%;
+
     
     
 }
 
+
 nav ul li{
     list-style-type: none;
-    padding-right: 1%;
+    /* display:inline-flex; */
+    /* flex-direction: row;
+    justify-content: right;  */
+    padding: 1%;
     
+    text-align: center;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+li a:visited{
+    color:black;
+
 }

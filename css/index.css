@@ -1,0 +1,54 @@
+main{
+    display: flex;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+   
+    margin-top: 3%;
+}
+
+.texto-apresentacao, figure{
+    max-width: 90%;
+    flex:1;
+    flex-direction: row;
+}
+
+
+
+.texto-apresentacao{
+    justify-content: flex-start;
+
+}
+
+
+
+.texto-apresentacao h1{
+    font-family: 'Hurricane', cursive;
+    text-align: center;
+    
+}
+
+.texto-apresentacao p{
+    
+    text-align: center;
+}
+
+figure{
+    justify-content: right;
+
+}
+
+figure img{
+    max-width: 50%;
+    border-radius: 25%;
+    /* margin-top: 15%; */
+    
+}
+
+
+.social-media img{
+    max-width: 10%;
+    display:inline-flex;
+    flex-direction: row;
+    
+
+}
