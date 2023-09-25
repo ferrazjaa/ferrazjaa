@@ -14,3 +14,90 @@ print quando quero imprimir
 speech reconhecimento de falas 
 se não passo, então ele entende que é all
 */
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 2%;
+}
+p{
+    width: 90%;
+    font-size: 0.85em;
+    text-indent: 1.1em;
+    text-align: justify;
+    margin: 0 0 2% 4%;
+    line-height: 1.3;
+}
+
+form{
+    width: 95%;
+    max-width: 32rem;
+    
+}
+
+fieldset{
+    text-align: center;
+    
+    margin: 2% 2% 4% 8%;
+    border: none;
+    /* background-color: black; */
+    /* color: white; */
+    font-weight: bold;
+}
+
+label, input, textarea{
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 1%;
+
+}
+
+.campo-telefone{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#prefixo-internacional{  
+    width: 15%; 
+    text-align: center;
+
+}
+
+#telefone{
+    width: 85%;  
+}
+
+label{
+    text-transform:uppercase;
+    font-size: 0.9em;
+    /* line-height: 1; */
+    padding: 0;
+    
+}
+
+
+#botao{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#social-media{
+    text-align: center;
+}
+
+footer{
+    /* display: block; */
+    font-size: 0.75em;
+    text-align: center; 
+    margin-top: 15%;
+}
+
+

@@ -28,19 +28,31 @@ header p{
 
 
 
-.nav{
+#nav{
     display: none;
 
 }
+
+#burguer{
+    position: relative;
+    top:-17.5vw;
+    left:82.5vw;
+    max-width: 10%;
+    font-size: 2.5em; 
+    display: block;
+   
+}
+
+
 
 
 ul{
     position: relative;
     top:-18.5vw;
-    /* right:0; */
+
     left: 55.5vw;
     max-width: 40%;
-    text-align: end;
+    text-align: center;
     max-height: 10vw;
 }
 
@@ -66,12 +78,3 @@ li a:visited{
 
 }
 
-#burguer{
-    position: relative;
-    top:-17.5vw;
-    left:82.5vw;
-    max-width: 10%;
-    font-size: 2.5em; 
-    display: block;
-   
-}
