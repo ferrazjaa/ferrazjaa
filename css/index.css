@@ -1,54 +1,57 @@
+
 main{
-    display: flex;
+    
     max-width: 100%;
-    font-family: 'Roboto', sans-serif;
-   
-    margin-top: 3%;
-}
-
-.texto-apresentacao, figure{
-    max-width: 90%;
-    flex:1;
-    flex-direction: row;
+    
+   /* padding-top: 3%; */
 }
 
 
-
-.texto-apresentacao{
-    justify-content: flex-start;
-
+p{
+    
+    text-align: center;
+    font-size: 2em;
 }
 
-
-
-.texto-apresentacao h1{
+h1{
     font-family: 'Hurricane', cursive;
     text-align: center;
+    font-size: 3em;
+    /* max-width: 50%; */
+   
     
 }
 
-.texto-apresentacao p{
-    
-    text-align: center;
-}
+
 
 figure{
-    justify-content: right;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
 
 }
 
 figure img{
     max-width: 50%;
     border-radius: 25%;
+    margin-right: 9.5%;
     /* margin-top: 15%; */
     
 }
 
-
-.social-media img{
-    max-width: 10%;
-    display:inline-flex;
-    flex-direction: row;
+.social-media{
     
-
+    text-align: center;
+    margin: 10%;
+   
 }
+
+
+footer{
+    font-size: 0.8em;
+    text-align: center; 
+    margin-top: 15%;
+}
+

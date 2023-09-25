@@ -10,10 +10,17 @@
     
     
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    max-height: 100vh;
+    /* background-color: rgba(117, 182, 131, 0.425);
+
+    box-shadow: none; */
 
     
 
 
 }
 
-
+html{
+    background-color: rgba(64, 224, 208, 0.11);
+}
