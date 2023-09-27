@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#obrigada{
+    width: 90%;
+    font-size: 1.3em;
+    text-align: justify;
+    margin: 7%;
+    text-indent: 1.1em;
+    
+    
+}
+
+#me{
+    font-family: 'Hurricane', cursive;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}

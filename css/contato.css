@@ -1,20 +1,3 @@
-
-
-
-
-/* exibir as mensagens conforme o formulário for preenchido 
-o seletor de sibling (irmão, no caso), usando o símbolo de adição + */
-
-
-/* media orientantion landscape (largura > altura) => celular deitado
-@media (orientation:landscape) */
-
-/* screen aplicado a telas
-print quando quero imprimir 
-speech reconhecimento de falas 
-se não passo, então ele entende que é all
-*/
-
 body{
     display: flex;
     flex-direction: column;
@@ -31,7 +14,7 @@ main p{
     font-size: 0.85em;
     text-indent: 1.1em;
     text-align: justify;
-    margin: 0 0 2% 4%;
+    margin: 0 0 7% 4%;
     line-height: 1.3;
 }
 
@@ -43,18 +26,19 @@ form{
 
 fieldset{
     text-align: center;
-    
     margin: 2% 2% 4% 8%;
     border: none;
     /* background-color: black; */
     /* color: white; */
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 label, input, textarea{
     display: block;
+
     width: 100%;
     font: inherit;
+    
     padding: 1%;
 
 }
@@ -80,17 +64,21 @@ label{
     font-size: 0.9em;
     /* line-height: 1; */
     padding: 0;
+    font-weight: bold;
     
 }
 
-
-#botao{
-    font-size: 0.9em;
-    font-weight: bold;
+input, textarea{
+    text-align: justify;
 }
 
-#social-media{
-    text-align: center;
+button{
+    padding: 2%;
+    width: 45%;
+    font: inherit;
+    font-weight: bold;
+    border-radius: 3%;
+   
 }
 
 footer{
@@ -100,4 +88,6 @@ footer{
     margin-top: 15%;
 }
 
-
+.social-media{
+    text-align: center;
+}
