@@ -1,52 +1,66 @@
 header{
 
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
    
     padding:3% 0 0 0;
 
-    /* display: flex;
-    flex-direction: column; */
- 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 7%;
+
 }
 
-header p{
-    display: inline;
-    font-size: 0.75em;
-    max-width: 50%;
+
+
+.hello-world {
+    /* display: inline; */
+    font-size: 0.80em;
+    /* max-width: 50%; */
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hello-world ul{
+    list-style-type: none;
 }
 
 #english{
-    margin-left: 7% ;
+    margin-left: 3.5% ;
 }
 
 #italiano{
-    margin-left: 9%;
+    margin-left: 7%;
 }
 
 
 
 
-#nav{
+ #nav{
     display: none;
 
 }
 
+.hamburguer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 5%;
+    
+}
+
+
 #burguer{
-    position: relative;
-    top:-17.5vw;
-    left:82.5vw;
-    max-width: 10%;
-    font-size: 2.5em; 
-    display: block;
-   
+    font-size: 2.5em;    
 }
 
 
 
 
-ul{
+/*ul{
     position: relative;
     top:-18.5vw;
 
@@ -55,7 +69,7 @@ ul{
     text-align: center;
     max-height: 10vw;
 }
-
+ */
 
 
 

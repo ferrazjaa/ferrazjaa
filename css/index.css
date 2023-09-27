@@ -1,3 +1,9 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 main{
     
@@ -7,7 +13,9 @@ main{
 }
 
 
-p{
+
+
+main p{
     
     text-align: center;
     font-size: 2em;
