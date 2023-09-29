@@ -1,0 +1,36 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.code-pen{
+    
+    width: 90%;
+    margin: 1em 0 1em 1em; 
+    
+}
+
+h1,h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+h1{
+    font-size: 2em;
+    
+}
+h2{
+    font-size: 1.3em;
+}
+
+
+
+.paragrafo-explicacao{
+    width: 85%;
+    text-align: justify;
+    font-size: 0.85em;
+    margin: 1em 0 1em 1.5em; 
+    text-indent: 1em;
+    line-height: 1.2;
+
+}
