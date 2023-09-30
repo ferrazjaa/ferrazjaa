@@ -1,6 +1,37 @@
 
 footer{
+    background-color: #21414A;
     font-size: 0.75em;
     text-align: center; 
     margin-top: 15%;
+    padding: 3%;
+}
+
+footer h2{
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 2%;
+   
+
+}
+
+footer li{
+    margin-bottom: 5%;
+    font-size: 1em;
+    
+}
+
+footer a{
+    color: #FFFAF9 ;
+    text-decoration: none;
+}
+
+
+footer a:visited{
+    color: #FFFAF9;
+}
+
+footer span{
+    font-size: 1.25em;
+    
 }

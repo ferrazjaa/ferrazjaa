@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #ffff;
 }
 
 
@@ -15,22 +16,28 @@ main{
 
 
 
-main p{
+#welcome{
     
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
+    padding: 0.31em;
+    
 }
 
 h1{
     font-family: 'Hurricane', cursive;
     text-align: center;
-    font-size: 3em;
+    font-size: 3.4em;
     /* max-width: 50%; */
-   
+   color: #000000;
     
 }
 
-
+#work{
+    text-align: center;
+    margin-bottom: 5%;
+    padding: 2%;
+}
 
 figure{
     max-width: 50%;
@@ -49,11 +56,41 @@ figure img{
     
 }
 
+
 .social-media{
     
     text-align: center;
     margin: 10%;
-   
+    font-size: 1.2em;
+    
 }
 
 
+
+.curriculo{
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4%;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3% 15%;
+    margin-left: 25%;
+    background-color: #233057;
+    font-weight: 500;
+   
+    
+}
+
+.curriculo a{
+    color: #FFFFF6;
+    /* color:#c96567 ; */
+    text-decoration: none;
+    /* text-shadow: 2px 2px 5px red; */
+}
+
+.curriculo a:visited{
+    color: #FFFFF6;
+    
+}

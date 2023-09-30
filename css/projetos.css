@@ -3,11 +3,21 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-
+.projeto{
+    width: 90%;
+    background-color: #E0D5BF;
+     margin: 1em 0 1em 1em;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .code-pen{
     
-    width: 90%;
-    margin: 1em 0 1em 1em; 
+    width: 85%;
+    margin-bottom: 1em;
+    /* margin:1em 0 1em 2em; */
+    
     
 }
 
@@ -17,20 +27,24 @@ h1,h2{
 }
 h1{
     font-size: 2em;
+    color:#003B4A;
     
 }
 h2{
     font-size: 1.3em;
+    padding-top: 1.2em;
+    
 }
 
 
 
 .paragrafo-explicacao{
-    width: 85%;
+    width: 80%;
     text-align: justify;
     font-size: 0.85em;
-    margin: 1em 0 1em 1.5em; 
+    /* margin: 1em 0 1em 3em;  */
     text-indent: 1em;
     line-height: 1.2;
+    /* color: #003B4A; */
 
 }
