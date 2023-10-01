@@ -13,37 +13,36 @@ main{
    /* padding-top: 3%; */
 }
 
-
-
-
 #welcome{
     
     text-align: center;
     font-size: 1.8em;
-    padding: 0.31em;
+    /* padding: 0.31em; */
     text-shadow: #233057;
     
 }
 
 
 
-h1{
+#meu-nome{
     font-family: 'Hurricane', cursive;
     text-align: center;
-    font-size: 3.4em;
+    font-size: 2em;
     /* max-width: 50%; */
    color: #000000;
     
 }
 
 #work{
+    font-size: 0.5em;
     text-align: center;
     margin-bottom: 5%;
-    padding: 2%;
+    /* padding: 2%; */
 }
 
 figure{
-    max-width: 50%;
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +51,7 @@ figure{
 }
 
 figure img{
-    max-width: 50%;
+    width: 50%;
     border-radius: 25%;
     margin-right: 9.5%;
     /* margin-top: 15%; */
@@ -71,7 +70,7 @@ figure img{
 
 
 .curriculo{
-    width: 50%;
+    /* width: 50%; */
     display: inline-flex;
     justify-content: center;
     text-align: center;
@@ -79,11 +78,11 @@ figure img{
     
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 3% 15%;
-    margin-left: 25%;
+    margin-left: 5%;
+
     background-color: #233057;
     font-weight: 500;
-   
-    
+
 }
 
 .curriculo a{
@@ -97,3 +96,44 @@ figure img{
     color: #FFFFF6;
     
 }
+
+@media (min-width:768px){
+    #welcome{
+        font-size:3em;
+        font-weight: 500;
+        margin-bottom: 6%;
+    }
+   
+    #meu-nome{
+        font-size: 5em;
+    }
+
+    #work{
+        font-size: 1.5em;
+    }
+
+    .nome-figure{
+        
+        display: grid;
+        grid-template-columns: 60% 30% ;
+        margin-bottom: 10%;
+        
+        /* align-items: center; */
+    }
+    
+    figure img{
+        width: 100%;
+    }
+
+    .social-media{
+        font-size: 2em;
+    }
+
+   .curriculo{
+    margin-left:35%;
+    font-size: 2em;
+   box-shadow:  0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
+   }
+ 
+}  
+    
