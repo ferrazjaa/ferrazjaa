@@ -21,8 +21,7 @@ main{
     
     text-align: center;
     font-size: 1.8em;
-    /* padding: 0.31em; */
-    text-shadow: #233057;
+    
     
 }
 
@@ -101,10 +100,42 @@ figure img{
     
 }
 
-@media (min-width:768px){
+@media (min-width:1024px){
+
+    header{
+        margin-bottom: 3%;
+    }
+   
     .hello-world{
         display: none;
     }
+
+   
+
+    #nav{
+        display: flex;
+        margin-top: 5%;
+       
+    }
+    nav ul li{
+        padding-left: 6%;
+        /* margin-right: 15%; */
+    }
+    
+    nav ul li a{
+        font-size: 1em;
+        
+    }
+
+    .hamburguer{
+        justify-content: center;
+        padding-bottom: 5%;
+        margin-left: 30%;
+        
+    }
+
+  
+    
 
     figure{
         display: none;
@@ -113,7 +144,7 @@ figure img{
 
     .foto-sidebar{
         display: block;
-        width: 40%;
+        width: 30%;
        
         position: fixed!important;
         z-index: 1;
@@ -129,32 +160,30 @@ figure img{
         background-image:url("../img/me2.jpg");
         display: block;
         height: 100%;
+        padding: 10%;
     }
-    /* #welcome{
+
+    
+    main, footer{
+        width: 70%;
+        float: left;
+        margin-left: 30%;
+    }
+
+     #welcome{
         font-size:3em;
         font-weight: 500;
         margin-bottom: 6%;
     }
    
     #meu-nome{
-        font-size: 5em;
+        font-size: 7em;
     }
 
     #work{
         font-size: 1.5em;
-    }
-
-    .nome-figure{
-        
-        display: grid;
-        grid-template-columns: 60% 30% ;
         margin-bottom: 10%;
-
     }
-    
-    figure img{
-        width: 100%;
-    } */
 
     .social-media{
         font-size: 2em;
@@ -164,6 +193,11 @@ figure img{
     margin-left:35%;
     font-size: 2em;
    box-shadow:  0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
+   }
+
+   footer{
+    /* max-height: 50%; */
+    margin-top: 5%;
    }
  
 }  
