@@ -17,9 +17,7 @@
     <!-- Link Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@400;500&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- Link do ícone do menu  -->
     <link rel="stylesheet"
@@ -40,9 +38,15 @@
 
         <div class="hello-world">
             <ul>
-                <li>&lt;Olá, Mundo/&gt;</li>
-                <li id="english">.div{Hello: world}</li>
-                <li id="italiano">console.log('Ciao, Mondo')</li>
+                <!-- portugues -->
+                <li id="pt">&lt; <span id="span-rosa">Olá, Mundo</span>/&gt;</li>
+
+                <!-- ingles -->
+                <li id="english"><span id="span-verde">.div </span>{ <span id="span-azul">Hello</span><span id="span-rosa">:</span><span id="span-roxo"> World</span> }</li>
+
+
+                <!-- italiano -->
+                <li id="italiano"><span id="span-roxo">console</span>.<span id="span-verde">log</span>(<span id="span-yellow">'Ciao, Mondo'</span>)</li>
 
             </ul>
 
@@ -61,8 +65,8 @@
             <!-- Menu de páginas -->
             <nav id="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre-mim.html">Sobre mim</a></li>
+                    <li ><a class="active" href="index.html">Home</a></li>
+                    <li><a href="sobre-mim.html">Sobre&nbsp;mim</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
@@ -76,7 +80,7 @@
 
     <main>
 
-        <div>
+        <div class="entrada"> 
             <p id='welcome'>Seja bem-vinda(o)!</p>
             <h1 id="meu-nome">Jéssica Ferraz</h1>
             <p id="work">Desenvolvedora front-end</p>
@@ -113,7 +117,11 @@
         <ul>
             <li> Menu baseado em <a href="https://youtu.be/Dd6Z3gkud18?si=W7hDcmb3ljJQ92NR" target="_blank"
                     rel="noopener noreferrer">Criando um menu hambúrguer - @Curso em Vídeo HTML5 e CSS3 por Curso em
-                    vídeo</a></li>
+                    vídeo</a>
+            </li>
+            <li>Paleta de cores consultada em: <a href="https://spec.draculatheme.com/" target="_blank" rel="noopener noreferrer">Dracula Syntax Highlighting Specification</a>
+
+            </li>
 
         </ul>
         <span>&copy; 2023 Jéssica Ferraz.</span>

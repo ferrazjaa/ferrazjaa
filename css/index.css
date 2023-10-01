@@ -21,8 +21,11 @@ main{
     text-align: center;
     font-size: 1.8em;
     padding: 0.31em;
+    text-shadow: #233057;
     
 }
+
+
 
 h1{
     font-family: 'Hurricane', cursive;
