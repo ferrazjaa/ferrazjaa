@@ -18,6 +18,7 @@ footer h2{
 footer li{
     margin-bottom: 5%;
     font-size: 1em;
+    list-style-type: none;
     
 }
 
@@ -36,4 +37,13 @@ footer a:visited{
 footer span{
     font-size: 1.25em;
     
+}
+
+@media (min-width: 768px){
+    footer ul{
+        margin:2%;
+    }
+    footer li{
+        margin:0;
+    }
 }

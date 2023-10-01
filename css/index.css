@@ -13,6 +13,10 @@ main{
    /* padding-top: 3%; */
 }
 
+.foto-sidebar{
+    display: none;
+}
+
 #welcome{
     
     text-align: center;
@@ -98,7 +102,35 @@ figure img{
 }
 
 @media (min-width:768px){
-    #welcome{
+    .hello-world{
+        display: none;
+    }
+
+    figure{
+        display: none;
+
+    }
+
+    .foto-sidebar{
+        display: block;
+        width: 40%;
+       
+        position: fixed!important;
+        z-index: 1;
+        overflow: auto;
+        height: 100%;
+    }
+
+
+    .imagem-fundo{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image:url("../img/me2.jpg");
+        display: block;
+        height: 100%;
+    }
+    /* #welcome{
         font-size:3em;
         font-weight: 500;
         margin-bottom: 6%;
@@ -117,13 +149,12 @@ figure img{
         display: grid;
         grid-template-columns: 60% 30% ;
         margin-bottom: 10%;
-        
-        /* align-items: center; */
+
     }
     
     figure img{
         width: 100%;
-    }
+    } */
 
     .social-media{
         font-size: 2em;
