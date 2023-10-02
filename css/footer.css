@@ -35,11 +35,17 @@ footer a:visited{
 
 
 
-footer span{
+footer span, footer .social-media{
     font-size: 1.25em;
-    
-    
+  
 }
+
+footer .social-media a{
+    margin-left: 3%;
+}
+
+
+
 
 @media (min-width: 768px){
     footer ul{
@@ -47,6 +53,17 @@ footer span{
     }
     footer li{
         margin:2%;
+    }
+
+    footer .social-media a{
+        text-align: center;
+        font-size:2em;
+    }
+}
+
+@media(min-width:1024px){
+    .social-media{
+        font-size: 3em;
     }
 }
 

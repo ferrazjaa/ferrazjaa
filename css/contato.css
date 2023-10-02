@@ -96,12 +96,7 @@ button:hover{
     font-size: 1.6em;
 }
 
-.social-media{
-    text-align: center;
-    font-size: 2em;
-    margin-top: 3%;
-    
-} 
+
 
 
 @media (min-width: 768px){
@@ -131,11 +126,7 @@ button:hover{
 
 }
 
-@media(min-width:1024px){
-    .social-media{
-        font-size: 3em;
-    }
-}
+
 
 
 @media(min-width:1440px){

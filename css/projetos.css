@@ -16,15 +16,10 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .code-pen{
-    
     width: 85%;
     max-width: 30rem;
     margin-bottom: 5%;
-    
-    
-    /* margin:1em 0 1em 2em; */
-    
-    
+   
 }
 
 h1,main h2{
@@ -32,6 +27,7 @@ h1,main h2{
     margin-bottom: 5%;
     font-weight: 500;
 }
+
 h1{
     font-size: 2em;
        
@@ -139,12 +135,7 @@ main h2{
         visibility: visible;
       }
 
-     
 
-    .social-media{
-
-        font-size: 3em;
-    }
 }
 
 @media(min-width:1440px){
