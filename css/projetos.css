@@ -1,39 +1,47 @@
 body{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: #ffff;
 }
+
 .projeto{
     width: 90%;
-    background-color: #E0D5BF;
-     margin: 1em 0 1em 1em;
+    margin: auto;
+    margin-bottom: 8%;
     border-radius: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .code-pen{
     
     width: 85%;
-    margin-bottom: 1em;
+    max-width: 30rem;
+    margin-bottom: 5%;
+    
+    
     /* margin:1em 0 1em 2em; */
     
     
 }
 
-h1,h2{
+h1,main h2{
     text-align: center;
     margin-bottom: 5%;
+    font-weight: 500;
 }
 h1{
     font-size: 2em;
-    color:#003B4A;
-    
+       
 }
-h2{
+
+main h2{
     font-size: 1.3em;
-    padding-top: 1.2em;
+    color:#000000;
+    padding-top: 5%;
+    
     
 }
 
@@ -46,6 +54,105 @@ h2{
     /* margin: 1em 0 1em 3em;  */
     text-indent: 1em;
     line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 5%;
     /* color: #003B4A; */
 
+}
+
+.link-github{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.paragrafo-explicacao a{
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.paragrafo-explicacao a img{
+    width: 30%;
+}
+
+  
+
+@media (min-width: 768px){
+    h1{
+        font-size: 3em;
+    }
+    main h2{
+        font-size: 2.3em;
+    }
+
+    .paragrafo-explicacao{
+        font-size: 1.5em;
+    }
+}
+
+@media(min-width:1024px){
+    .projetos{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        /* flex-direction: row;
+        width: 100%;
+        flex: 1; */
+     
+    }
+    .projetos > div{
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .code-pen{
+    
+        width: 90%;
+        max-width: 40rem;
+
+    }
+    .paragrafo-explicacao a{
+        margin-left: 5%;
+        cursor: pointer;
+    }
+    
+    .paragrafo-explicacao a img{
+        width: 50%;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 15%;
+        background-color:#233057 ;
+        color: #FFFFF6;
+        font-size: 0.83em;
+        text-align: center;
+        border-radius: 6px;
+        padding: 1% 0;
+      
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+
+     
+
+    .social-media{
+
+        font-size: 3em;
+    }
+}
+
+@media(min-width:1440px){
+    h1{
+        font-size: 5em;
+    }
+
+    main h2{
+        font-size: 3em;
+    }
 }
