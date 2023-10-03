@@ -20,7 +20,34 @@ html {
 
     /* background-color: C; */
     background-image: linear-gradient(to bottom right, #c96567, #0728319f);
+}
 
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffff;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 500;
+    box-shadow: 1px 1px 3px 3px;
+}
+
+@media (min-width: 768px){
+    h1{
+        font-size: 3em;
+    }
+}
+
+@media(min-width:1440px){
+    h1{
+        font-size: 5em;
+    }
 }
 
 /* SCROLLBAR-----------------------------------  */

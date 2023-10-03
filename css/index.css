@@ -1,87 +1,62 @@
-body{
+.conteudo{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
-    color: #ffff;
 }
 
-
-main{
-    
-    max-width: 100%;
-    
-   /* padding-top: 3%; */
-}
-
-.foto-sidebar{
+.minha-foto{
     display: none;
 }
-
-#welcome{
-    
-    text-align: center;
-    font-size: 1.8em;
-    
-    
-}
-
-
 
 #meu-nome{
     font-family: 'Hurricane', cursive;
     text-align: center;
-    font-size: 2em;
-    /* max-width: 50%; */
-   color: #000000;
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 5%;
+    box-shadow: none;
+   
     
 }
 
 #work{
-    font-size: 0.5em;
+    font-size: 1.3em;
     text-align: center;
+    font-weight: 500;
     margin-bottom: 5%;
-    /* padding: 2%; */
+   
 }
 
-figure{
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 30%;
-
+.minha-foto-2{
+    width: 80%;
+    margin-bottom: 5%;
 }
-
-figure img{
+.minha-foto-2 img{
     width: 50%;
     border-radius: 25%;
-    margin-right: 9.5%;
-    /* margin-top: 15%; */
-    
-}
-
-
-.social-media{
-    
     text-align: center;
-    margin: 10%;
-    font-size: 1.2em;
-    
+    margin-left: 35%;
 }
+
+
+/* .github-linkedin{
+    text-align: center;     
+    font-size: 2em;
+    margin-bottom: 5%;
+} */
 
 
 
 .curriculo{
-    /* width: 50%; */
-    display: inline-flex;
-    justify-content: center;
+    width: 50%;
+
+    margin-left: 25%;
     text-align: center;
     padding: 4%;
     
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 3% 15%;
-    margin-left: 5%;
+   
 
     background-color: #233057;
     font-weight: 500;
@@ -90,9 +65,8 @@ figure img{
 
 .curriculo a{
     color: #FFFFF6;
-    /* color:#c96567 ; */
     text-decoration: none;
-    /* text-shadow: 2px 2px 5px red; */
+
 }
 
 .curriculo a:visited{
@@ -100,105 +74,76 @@ figure img{
     
 }
 
-@media (min-width:1024px){
-
-    header{
-        margin-bottom: 3%;
-    }
-   
-    .hello-world{
-        display: none;
+@media(min-width:768px){
+    .conteudo{
+        flex-direction: row;
     }
 
-   
-
-    #nav{
+    .minha-foto{
         display: flex;
-        margin-top: 5%;
-       
-    }
-    nav ul li{
-        padding-left: 6%;
-        /* margin-right: 15%; */
-    }
-    
-    nav ul li a{
-        font-size: 1em;
+        flex: 40%;
+        padding: 10px;
         
     }
 
-    .hamburguer{
-        justify-content: center;
-        padding-bottom: 5%;
-        margin-left: 30%;
+    .minha-foto img{
+        width: 100%;
+        border-radius: 25%;
+        height: 100%;
         
     }
 
-  
-    
-
-    figure{
+    .minha-foto-2{
         display: none;
-
     }
 
-    .foto-sidebar{
-        display: block;
-        width: 30%;
+    .container{
+        flex: 60%;
+        padding: 10px;
        
-        position: fixed!important;
-        z-index: 1;
-        overflow: auto;
-        height: 100%;
     }
 
-
-    .imagem-fundo{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image:url("../img/me2.jpg");
-        display: block;
-        height: 100%;
-        padding: 10%;
-    }
-
-    
-    main, footer{
-        width: 70%;
-        float: left;
-        margin-left: 30%;
-    }
-
-     #welcome{
-        font-size:3em;
-        font-weight: 500;
-        margin-bottom: 6%;
-    }
-   
     #meu-nome{
-        font-size: 7em;
+        margin-top: 10%;
+        font-size: 5em;
     }
 
     #work{
-        font-size: 1.5em;
-        margin-bottom: 10%;
-    }
-
-    .social-media{
         font-size: 2em;
+        margin-bottom: 30%;
     }
 
-   .curriculo{
-    margin-left:35%;
-    font-size: 2em;
-   box-shadow:  0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
-   }
+    .curriculo{
+        width: 60%;
+        font-size: 2em;
+        /* padding: 20%; */
+        margin-left: 20%;
+        
+    }
+}
 
-   footer{
-    /* max-height: 50%; */
-    margin-top: 5%;
-   }
- 
-}  
-    
+@media(min-width:1024px){
+
+    .minha-foto{
+        margin-bottom: 2%;
+    }
+    #meu-nome{
+        font-size: 9em;
+       
+    }
+
+    #work{
+        font-size: 2.85em;
+    }
+
+    .curriculo{
+        padding: 7%;
+        font-size: 3em;
+        /* padding: 20%; */
+        margin-left: 20%;
+        margin-bottom: 2%;
+        
+    }
+   
+   
+}
