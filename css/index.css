@@ -8,6 +8,7 @@
     display: none;
 }
 
+
 #meu-nome{
     font-family: 'Hurricane', cursive;
     text-align: center;
@@ -61,6 +62,8 @@
     background-color: #233057;
     font-weight: 500;
 
+    cursor: pointer;
+
 }
 
 .curriculo a{
@@ -72,6 +75,10 @@
 .curriculo a:visited{
     color: #FFFFF6;
     
+}
+
+.curriculo:hover{
+    transform: scale(1.1);
 }
 
 @media(min-width:768px){

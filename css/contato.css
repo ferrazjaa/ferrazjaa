@@ -63,6 +63,10 @@ input, textarea{
     text-align: justify;
 }
 
+textarea{
+    resize: none;
+}
+
 button{
     padding: 4%;
     width: 45%;

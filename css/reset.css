@@ -27,6 +27,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
     color: #ffff;
+    
+}
+
+a{
     cursor: pointer;
 }
 
@@ -73,3 +77,4 @@ h1{
     background-color: #233057;
     cursor: pointer;
 }
+

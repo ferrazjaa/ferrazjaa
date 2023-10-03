@@ -1,23 +1,61 @@
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
 #obrigada{
     width: 90%;
-    font-size: 1.3em;
+    font-size: 2em;
     text-align: justify;
-    margin: 7%;
-    text-indent: 1.1em;
-    
+    margin: auto;
+    margin-bottom: 5%;
+    /* text-indent: 1.1em; */
+    font-weight: 500;
     
 }
+
+p{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 5%;
+
+}
+
+.contato{
+    text-align: center;
+    
+   
+}
+
+.contato a{
+    font-size: 3em;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 5%;
+}
+
+
+
 
 #me{
     font-family: 'Hurricane', cursive;
-    text-align: center;
-    font-size: 5em;
+    text-align: end;
+    font-size: 7em;
     font-weight: bold;
+    color: black;
+    margin: auto;
+}
+
+@media(max-width:768px){
+    #obrigada{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1.4em;
+    }
+
+    contato a{
+        font-size: 2em;
+    }
+
+    #me{
+        font-size: 3.5em;
+    }
 }
