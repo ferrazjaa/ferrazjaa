@@ -1,7 +1,11 @@
+main{
+    width: 95%;
+}
+
 #obrigada{
     width: 90%;
     font-size: 2em;
-    text-align: justify;
+    text-align: center;
     margin: auto;
     margin-bottom: 5%;
     /* text-indent: 1.1em; */
@@ -45,6 +49,7 @@ p{
 @media(max-width:768px){
     #obrigada{
         font-size: 1.5em;
+        text-align: justify;
     }
 
     p{
