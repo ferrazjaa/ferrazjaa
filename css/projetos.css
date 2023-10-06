@@ -29,9 +29,9 @@ main h2{
 
 
 .paragrafo-explicacao{
-    width: 80%;
+    width: 85%;
     text-align: justify;
-    font-size: 0.85em;
+    font-size: 0.80em;
     /* margin: 1em 0 1em 3em;  */
     text-indent: 1em;
     line-height: 1.2;
@@ -39,6 +39,11 @@ main h2{
     margin-bottom: 5%;
     /* color: #003B4A; */
 
+}
+
+.icones{
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 5px black;
 }
 
 .link-github{
@@ -72,7 +77,7 @@ main h2{
     }
 
     .paragrafo-explicacao{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 }
 
