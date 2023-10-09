@@ -46,7 +46,7 @@ main h4{
 .primeiro-container{
      
     color: #000!important;
-    background-color: #f1f1f1!important;
+    background-color: #f1f1f144!important;
     border-radius: 1em;
     font-size: 0.75em!important;
     font-weight: 500;
@@ -57,7 +57,7 @@ main h4{
     padding: 0.01em 1em;
     text-align:center;
     border-radius: 1em;
-    color: #000000!important;
+    color: #FFFFEC!important;
     background-color:#21414A!important;
 }
 
