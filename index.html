@@ -23,20 +23,15 @@
     <!-- Link Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@400;500&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- Link do ícone do menu  -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1708746a55.js" crossorigin="anonymous"></script>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
-
+ 
 
 </head>
 
@@ -44,6 +39,7 @@
 
     <header>
 
+        <!-- Apresentação olá mundo -->
         <div class="hello-world">
             <ul>
                 <!-- portugues -->
@@ -61,15 +57,12 @@
             </ul>
 
 
+        <!-- Fim da div hello-word -->
         </div>
 
-        <div class="foto-sidebar">
-            <div class="imagem-fundo"></div>
+       
 
-        </div>
-
-
-
+        <!-- menu com dropdown -->
         <div class="hamburguer">
             <!--  Icone do menu com função onclick -->
             <span id="burguer" class="material-symbols-rounded" onclick="clickMenu()"> menu </span>
@@ -90,42 +83,48 @@
             </nav>
         </div>
 
-
+        <!-- fim do header -->
     </header>
 
 
     <main>  
 
+
         <h1 id='welcome'>Seja bem-vinda(o)!</h1>
 
+       <!-- Inicio do conteudo da página -->
         <div class="conteudo">
+            <!-- Minha foto na lateral  -->
             <figure class="minha-foto">
                 <img src="img/me2.jpg" alt="Foto de Jéssica Ferraz">
             </figure>
-    
+            
+            <!-- Container com meu nome -->
             <div class="container">
     
                
         
         
                 <h1 id="meu-nome">Jéssica Ferraz</h1>
-                <h2 id="work">Desenvolvedora front-end</h2>
+                <h2 id="work">Desenvolvedora web</h2>
 
               
         
         
-        
+                <!-- Foto na configuração de telas menores -->
                 <figure class="minha-foto-2">
                     <img src="img/me2.jpg" alt="Foto de Jéssica Ferraz">
                 </figure>
         
-   
+                <!-- Currículo -->
                 <div class="curriculo">
                     <a href="Currículo - Jessica Ferraz.pdf" download="cv-Jessica Ferraz">Currículo&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i></a>
+                <!-- Fim da div currículo -->
                 </div>
-    
+                
             </div>
 
+        <!-- Fim da div conteudo -->
         </div>
         
         
@@ -157,6 +156,8 @@
 
         </ul>
         <span>&copy; 2023 Jéssica Ferraz.</span>
+
+        <!-- link para as minhas redes -->
         <div class="social-media">
             <!-- github -->
             <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer"> <i
@@ -165,6 +166,8 @@
 
             <a href="https://www.linkedin.com/in/ferrazjaa/" target="_blank" rel="noopener noreferrer"> <i
                     class="fa-brands fa-linkedin"></i></a>
+        
+        <!-- Fim da div das minhas redes -->
         </div>
 
 
@@ -176,8 +179,10 @@
         <div vw-plugin-wrapper>
           <div class="vw-plugin-top-wrapper"></div>
         </div>
+    <!-- Fim da div configuração de acessibilidade -->
     </div>
 
+    <!-- ÁREA JAVASCRIPT -------------------------------------------------------------------------------------------- -->
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
 

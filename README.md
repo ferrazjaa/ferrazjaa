@@ -14,11 +14,12 @@ Neste repositório, você conhecerá um pouco sobre mim. Ademais, você encontra
 ## Projetos
 - [Cardápio](https://ferrazjaa.github.io/atividade02/): cardápio de uma cafeteria fictícia;
 - [Ods 7](https://ferrazjaa.github.io/semana3/): página sobre o objetivo de desenvolvimento sustentável 7 - Energia limpa e acessível;
-- [Pomodoro Timer](https://ferrazjaa.github.io/pomodoro): Temporizador baseado no metódo pomodoro. Na página você pode escolher o tempo do temporizador para o foco no trabalho.
+- [Pomodoro Timer](https://ferrazjaa.github.io/pomodoro): Temporizador baseado no metódo pomodoro. Na página você pode escolher o tempo do temporizador para o foco no trabalho;
+-[Viajar é Preciso](https://ferrazjaa.github.io/viajar-Preciso/):Página inicial de uma agência de viagem fictícia desenvolvida com Bootstrap 5.
 
-<!-- ## Licença
+## Licença
 
-Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes. -->
+Este projeto é licenciado sob a Licença MIT.
 
 ## Agradecimentos
 Agradeço por visitar meu repositório e por seu interesse no meu trabalho!

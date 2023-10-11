@@ -1,25 +1,28 @@
+/* CSS PÁGINA PRINCIPAL  */
+
+/* Conteúdo em coluna para dispositivos menores */
 .conteudo{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
+/* Foto não apresentanda em dispositivos menores */
 .minha-foto{
     display: none;
 }
 
-
+/* Estilizando meu nome */
 #meu-nome{
     font-family: 'Hurricane', cursive;
     text-align: center;
     font-size: 2.5em;
     color: #000000;
     margin-bottom: 5%;
-    box-shadow: none;
-   
-    
+    box-shadow: none;    
 }
 
+/* Estilizando a posição de trabalho */
 #work{
     font-size: 1.3em;
     text-align: center;
@@ -28,6 +31,7 @@
    
 }
 
+/* Foto exibida em dispositivos menores */
 .minha-foto-2{
     width: 80%;
     margin-bottom: 5%;
@@ -40,14 +44,7 @@
 }
 
 
-/* .github-linkedin{
-    text-align: center;     
-    font-size: 2em;
-    margin-bottom: 5%;
-} */
-
-
-
+/* Estilização do currículo */
 .curriculo{
     width: 50%;
 
@@ -81,11 +78,14 @@
     transform: scale(1.1);
 }
 
+/* Alteração para midias maiores que 768px */
 @media(min-width:768px){
+    /* Conteúdo lado a lado  */
     .conteudo{
         flex-direction: row;
     }
 
+    /* Foto do lado esquerdo  */
     .minha-foto{
         display: flex;
         flex: 40%;
@@ -100,10 +100,12 @@
         
     }
 
+    /* Não exibe a foto para dispositivos menores */
     .minha-foto-2{
         display: none;
     }
 
+    /* Lado direito da página */
     .container{
         flex: 60%;
         padding: 10px;
@@ -129,6 +131,7 @@
     }
 }
 
+/* Configurando tamanhos  */
 @media(min-width:1024px){
 
     .minha-foto{
