@@ -1,3 +1,6 @@
+/* CSS PROJETOS */
+
+/* Estilo de cada projeto */
 .projeto{
     width: 90%;
     margin: auto;
@@ -8,6 +11,8 @@
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* tamanho que alocará o codepen */
 .code-pen{
     width: 85%;
     max-width: 30rem;
@@ -15,6 +20,7 @@
    
 }
 
+/* título dos projetos */
 main h2{
     text-align: center;
     margin-bottom: 5%;
@@ -27,7 +33,7 @@ main h2{
 }
 
 
-
+/* EXPLICAÇÃO PROJETO */
 .paragrafo-explicacao{
     width: 85%;
     text-align: justify;
@@ -41,6 +47,7 @@ main h2{
 
 }
 
+/* ICONES PAGES E REPOSITÓRIO */
 .icones{
     font-size: 1.3rem;
     text-shadow: 2px 2px 5px black;
@@ -63,13 +70,9 @@ main h2{
     margin-bottom: 2%;
 }
 
-/* .tooltiptext{
-    font-size: 0.7em;
-    line-height: normal;
-    text-indent: 0;
-    width: 10%;
-} */
 
+
+/* LOADER */
 .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
@@ -106,10 +109,7 @@ main h2{
         display: flex;
         width: 90%;
         margin: auto;
-        /* flex-direction: row;
-        width: 100%;
-        flex: 1; */
-     
+
     }
     .projetos > div{
         margin: 15px;
