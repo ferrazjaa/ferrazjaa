@@ -17,7 +17,6 @@ header{
 }
 
 .hello-world {
-    /* display: inline; */
     font-size: 0.80em;
     /* max-width: 50%; */
     margin-left: 5%;
@@ -123,7 +122,7 @@ header{
 }
 
 
-nav ul li{
+.menu__item{
     list-style-type: none;
     margin-bottom: 3%;
     font-size: 0.95em;
@@ -132,19 +131,19 @@ nav ul li{
     
 }
 
-nav ul li a{
+.menu__link{
     text-decoration: none;
     color: #FFFFEC;
     font-weight: 500;
 }
 /* :link, :visited, e :active */
-li a:visited{
+.menu__link:visited{
     color: #FFFFEC;    
     font-weight: 500;
 }
 
 
-li a:hover:not(.active){
+.menu__lin:hover:not(.active){
     cursor: pointer;
     background-color: #448596;
     border-radius: 4%;
@@ -168,7 +167,7 @@ li a:hover:not(.active){
         font-size:3em;
     }
 
-    nav ul li{
+    .menu__item{
         font-size:1.5em;
     }
 
@@ -200,20 +199,20 @@ li a:hover:not(.active){
         margin-right: 10%;
     }
     
-    nav ul{
+    .menu__lista{
         display: flex;
         flex-direction: row;
       
     }
     
-    nav ul li{
+    .menu__item{
         margin: 0;
         text-align: flex-start;
        padding-left: 3%;
         
     }
 
-    nav ul li a{
+    .menu__link{
         font-size: 1.5em;
         
     }
@@ -222,12 +221,12 @@ li a:hover:not(.active){
 }
 
 @media (min-width: 2560px){
-    nav ul li{
+    .menu__item{
         
        padding-left: 5%;
         
     }
-    nav ul li a{
+    .menu__link{
         font-size: 2.5em;
         
     } 

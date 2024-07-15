@@ -37,7 +37,7 @@
 
 <body>
 
-    <header>
+    <header class="cabecalho">
 
         <!-- Apresentação olá mundo -->
         <div class="hello-world">
@@ -71,14 +71,25 @@
 
             <!-- Menu de páginas -->
 
-            <nav id="nav">
+            <nav id="nav" class="menu">
 
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="sobre-mim.html">Sobre&nbsp;mim</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+                <ul class="menu__lista"> <!--início menu lista-->
+                    <li class="menu__item">
+                        <a href="index.html" class="active menu__link">Home</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="sobre-mim.html" class="menu__link">Sobre&nbsp;mim</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="projetos.html" class="menu__link">Projetos</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="contato.html" class="menu__link">Contato</a>
+                    </li>
+                </ul><!--fim menu lista-->
 
             </nav>
         </div>

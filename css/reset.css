@@ -14,12 +14,14 @@
 
 }
 
-html {
-    /* background-color: #C96567; */
-    /* background-color: #65ccb8; */
+:root{
+    --cor-rosa:#c96567;
+    --cor-azul-escuro: #0728319f;
+    --gradiente: linear-gradient(to bottom right, #c96567, #0728319f);
+}
 
-    /* background-color: C; */
-    background-image: linear-gradient(to bottom right, #c96567, #0728319f);
+html {
+    background-image: var(--gradiente)
 }
 
 body{
@@ -68,7 +70,7 @@ h1{
 
 /* Barra de Rolagem*/
 ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to bottom right, #c96567, #0728319f);
+    background-image: var(--gradiente);
     border-radius: 10px;
 }
 
