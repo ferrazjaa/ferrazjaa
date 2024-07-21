@@ -21,7 +21,7 @@
 }
 
 html {
-    background-image: var(--gradiente)
+    background-image: var(--gradiente);
 }
 
 body{
