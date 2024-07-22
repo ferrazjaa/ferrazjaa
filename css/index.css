@@ -1,48 +1,36 @@
 /* CSS PÁGINA PRINCIPAL  */
+/* h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 500;
+    box-shadow: 1px 1px 3px 3px;
+} */
 
-/* Conteúdo em coluna para dispositivos menores */
-.conteudo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+/* main{
+    width: 940px;
+} */
+.grid-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100rem;
 }
 
-/* Foto não apresentanda em dispositivos menores */
-.minha-foto{
-    display: none;
+.item-1{
+    background-image: url(../img/me2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 
 /* Estilizando meu nome */
 #meu-nome{
     font-family: 'Hurricane', cursive;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 10rem;
     color: #000000;
     margin-bottom: 5%;
     box-shadow: none;    
 }
-
-/* Estilizando a posição de trabalho */
-#work{
-    font-size: 1.3em;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 5%;
-   
-}
-
-/* Foto exibida em dispositivos menores */
-.minha-foto-2{
-    width: 80%;
-    margin-bottom: 5%;
-}
-.minha-foto-2 img{
-    width: 50%;
-    border-radius: 25%;
-    text-align: center;
-    margin-left: 35%;
-}
-
 
 /* Estilização do currículo */
 .curriculo{
@@ -76,84 +64,4 @@
 
 .curriculo:hover{
     transform: scale(1.1);
-}
-
-/* Alteração para midias maiores que 768px */
-@media(min-width:768px){
-    /* Conteúdo lado a lado  */
-    .conteudo{
-        flex-direction: row;
-    }
-
-    /* Foto do lado esquerdo  */
-    .minha-foto{
-        display: flex;
-        flex: 40%;
-        padding: 10px;
-        
-    }
-
-    .minha-foto img{
-        width: 100%;
-        border-radius: 25%;
-        height: 100%;
-        
-    }
-
-    /* Não exibe a foto para dispositivos menores */
-    .minha-foto-2{
-        display: none;
-    }
-
-    /* Lado direito da página */
-    .container{
-        flex: 60%;
-        padding: 10px;
-       
-    }
-
-    #meu-nome{
-        margin-top: 10%;
-        font-size: 5em;
-    }
-
-    #work{
-        font-size: 2em;
-        margin-bottom: 30%;
-    }
-
-    .curriculo{
-        width: 60%;
-        font-size: 2em;
-        /* padding: 20%; */
-        margin-left: 20%;
-        
-    }
-}
-
-/* Configurando tamanhos  */
-@media(min-width:1024px){
-
-    .minha-foto{
-        margin-bottom: 2%;
-    }
-    #meu-nome{
-        font-size: 9em;
-       
-    }
-
-    #work{
-        font-size: 2.85em;
-    }
-
-    .curriculo{
-        padding: 7%;
-        font-size: 3em;
-        /* padding: 20%; */
-        margin-left: 20%;
-        margin-bottom: 2%;
-        
-    }
-   
-   
 }

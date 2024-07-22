@@ -1,22 +1,20 @@
 /* Vai zerar todo padrão de página do css */
-
-* {
-    margin: 0;
-
-    /* Uma vez que a propriedade box-sizing é muito nova, é recomendado utilizar os "vendor prefixes" -webkit- e -moz- por enquanto */
+*, *::before, *::after {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+  }
 
-
+* {
+    margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 
 }
 
 :root{
-    --cor-rosa:#c96567;
     --cor-azul-escuro: #0728319f;
+    --cor-rosa:#c96567;
     --gradiente: linear-gradient(to bottom right, #c96567, #0728319f);
 }
 
@@ -25,10 +23,10 @@ html {
 }
 
 body{
+    color: #ffff;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #ffff;
     
 }
 
@@ -36,23 +34,37 @@ a{
     cursor: pointer;
 }
 
-h1{
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 5%;
-    font-weight: 500;
-    box-shadow: 1px 1px 3px 3px;
-}
 
-@media (min-width: 768px){
-    h1{
-        font-size: 3em;
+/* MEDIA QUERIES ****************************************************************************** */
+@media screen and (min-width:  0){
+    :root{
+        font-size: 42%; 
     }
 }
 
-@media(min-width:1440px){
-    h1{
-        font-size: 5em;
+@media screen and (min-width:  576px) {
+    :root {
+        font-size: 46%;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    :root {
+        font-size: 54%;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    :root {
+        font-size: 62.5%;
     }
 }
 

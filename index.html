@@ -4,10 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="description" content="Portfólio de Jessica Ferraz, desenvolvedor(a) web com habilidades em HTML, CSS e JavaScript. Explore meus projetos e entre em contato para oportunidades de trabalho.">
-    <meta name="keywords" content="portfólio, desenvolvedor web, HTML, CSS, JavaScript, projetos, frontend, web development, bootstrap">
+    <meta name="keywords" content="portfólio, desenvolvedor web, HTML, CSS, JavaScript, PHP, projetos, frontend, web development, bootstrap">
     <meta name="author" content="Jessica Ferraz">
 
+    <meta property="og:title" content="Portfólio de Jessica Ferraz">
+    <meta property="og:description" content="Desenvolvedor web com foco em HTML, CSS e JavaScript. Confira meus projetos e entre em contato.">
+    <meta property="og:image" content="URL_da_sua_imagem.jpg">
+    <meta property="og:url" content="https://ferrazjaa.github.io/">
+    <meta property="og:type" content="website">
+
+    <meta name="robots" content="index, follow">
  
 
     <title>Portfólio | Jessica Ferraz</title>
@@ -89,20 +98,29 @@
 
                 <ul class="menu__lista"> <!--início menu lista-->
                     <li class="menu__item">
-                        <a href="index.html" class="active menu__link">Home</a>
+                        <a href="#" class="active menu__link">Home</a>
                     </li>
 
                     <li class="menu__item">
-                        <a href="sobre-mim.html" class="menu__link">Sobre&nbsp;mim</a>
+                        <a href="html/sobre-mim.html" class="menu__link">Sobre&nbsp;mim</a>
                     </li>
 
                     <li class="menu__item">
-                        <a href="projetos.html" class="menu__link">Projetos</a>
+                        <a href="html/projetos.html" class="menu__link">Projetos</a>
                     </li>
 
                     <li class="menu__item">
-                        <a href="contato.html" class="menu__link">Contato</a>
+                        <a href="html/contato.html" class="menu__link">Contato</a>
                     </li>
+                    
+                    <li class="menu__item dropdown">
+                        <a href="" class="menu__link"><i class="fa-solid fa-globe"></i></a>
+                        <div>
+                            <a href="en/index.html">English</a>
+                            <a href="it/index.html">Italiano</a>
+                        </div>
+                    </li>
+                    
                 </ul><!--fim menu lista-->
 
             </nav>
@@ -113,45 +131,24 @@
 
 
     <main>  
-
-
-     
-
-       <!-- Inicio do conteudo da página -->
-        <div class="conteudo">
-            <!-- Minha foto na lateral  -->
-            <figure class="minha-foto">
-                <img src="img/me2.jpg" alt="Foto de Jéssica Ferraz">
-            </figure>
-            
-            <!-- Container com meu nome -->
-            <div class="container">
-    
-               
-        
-        
+        <section class="grid-container">
+            <div class="item-1"></div>
+            <div class="item-2">
                 <h1 id="meu-nome">Jéssica Ferraz</h1>
                 <h2 id="work">Desenvolvedora web</h2>
+            </div>    
+        </section>
+        
 
-              
         
-        
-                <!-- Foto na configuração de telas menores -->
-                <figure class="minha-foto-2">
-                    <img src="img/me2.jpg" alt="Foto de Jéssica Ferraz">
-                </figure>
-        
-                <!-- Currículo -->
-                <div class="curriculo">
-                    <a href="Currículo - Jessica Ferraz.pdf" download="cv-Jessica Ferraz">Currículo&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i></a>
-                <!-- Fim da div currículo -->
-                </div>
-                
-            </div>
 
-        <!-- Fim da div conteudo -->
+        <!-- Currículo -->
+        <div class="curriculo">
+            <a href="Currículo - Jessica Ferraz.pdf" download="cv-Jessica Ferraz">Currículo&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i></a>
+        <!-- Fim da div currículo -->
         </div>
-        
+
+
         
 
     </main>
@@ -162,25 +159,13 @@
     <footer>
         <h2>Referências</h2>
         <ul>
-            <li>Página inicial baseada em: <a
-                    href="https://www.w3schools.com/howto/tryw3css_templates_bw_portfolio.htm#" target="_blank"
-                    rel="noopener noreferrer">Templates portfolio - W3C</a> </li>
-            <li> Menu baseado em <a href="https://youtu.be/Dd6Z3gkud18?si=W7hDcmb3ljJQ92NR" target="_blank"
-                    rel="noopener noreferrer">Criando um menu hambúrguer - @Curso em Vídeo HTML5 e CSS3 por Curso em
-                    vídeo</a></li>
-            <li>Paleta de cores consultada em: <a href="https://spec.draculatheme.com/" target="_blank"
-                    rel="noopener noreferrer">Dracula Syntax Highlighting Specification</a></li>
-            <li>Scrollbar baseado em: <a
-                    href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2"
-                    target="_blank" rel="noopener noreferrer">How To - Custom Scrollbar|W3 Schools </a>
-
-            </li>
+            
             <li>Favicon gerada por: <a href="https://favicon.io/" target="_blank" rel="noopener noreferrer">Favicon.io</a>
             </li>
             <li><a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank">Libras: Integrando a uma Página Web por gov.br</a></li>
 
         </ul>
-        <span>&copy; 2024 Jessica Ferraz.</span>
+        
 
         <!-- link para as minhas redes -->
         <div class="social-media">
@@ -216,6 +201,8 @@
             </ul><!--fim menu lista-->
 
         </nav>
+
+        <span>&copy; 2024 Jessica Ferraz.</span>
     </footer>
 
     <!-- ACESSIBILIDADE EM LIBRAS -->
