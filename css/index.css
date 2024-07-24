@@ -10,7 +10,7 @@
 /* main{
     width: 940px;
 } */
-.grid-container{
+/* .grid-container{
     display: grid;
     grid-template-columns: 40% 60%;
     height: 100rem;
@@ -20,7 +20,7 @@
     background-image: url(../img/me2.jpg);
     background-size: cover;
     background-repeat: no-repeat; 
-}
+} */
 
 /* Estilizando meu nome */
 #meu-nome{

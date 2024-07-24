@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="description" content="Portfólio de Jessica Ferraz, desenvolvedor(a) web com habilidades em HTML, CSS e JavaScript. Explore meus projetos e entre em contato para oportunidades de trabalho.">
-    <meta name="keywords" content="portfólio, desenvolvedor web, HTML, CSS, JavaScript, PHP, projetos, frontend, web development, bootstrap">
+    <meta name="description"
+        content="Portfólio de Jessica Ferraz, desenvolvedor(a) web com habilidades em HTML, CSS e JavaScript. Explore meus projetos e entre em contato para oportunidades de trabalho.">
+    <meta name="keywords"
+        content="portfólio, desenvolvedor web, HTML, CSS, JavaScript, PHP, projetos, frontend, web development, bootstrap">
     <meta name="author" content="Jessica Ferraz">
 
     <meta property="og:title" content="Portfólio de Jessica Ferraz">
-    <meta property="og:description" content="Desenvolvedor web com foco em HTML, CSS e JavaScript. Confira meus projetos e entre em contato.">
+    <meta property="og:description"
+        content="Desenvolvedor web com foco em HTML, CSS e JavaScript. Confira meus projetos e entre em contato.">
     <meta property="og:image" content="URL_da_sua_imagem.jpg">
     <meta property="og:url" content="https://ferrazjaa.github.io/">
     <meta property="og:type" content="website">
 
     <meta name="robots" content="index, follow">
- 
+
 
     <title>Portfólio | Jessica Ferraz</title>
 
@@ -30,6 +33,7 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -37,15 +41,18 @@
     <!-- Link Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@400;500&family=Roboto&display=swap"
+        rel="stylesheet">
 
     <!-- Link do ícone do menu  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1708746a55.js" crossorigin="anonymous"></script>
 
- 
+
 
 </head>
 
@@ -53,103 +60,104 @@
 
     <header class="cabecalho">
 
-        <!-- Apresentação olá mundo -->
-        <div class="hello-world">
-            <ul>
-                <!-- portugues -->
+        <h1><a href="#home" class="logo">Jessica Ferraz</a></h1>
+
+
+
+
+
+        <nav id="nav" class="menu">
+
+            <ul class="menu__lista"> <!--início menu lista-->
+
+                <li class="menu__item">
+                    <a href="html/sobre-mim.html" class="menu__link">Sobre</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="html/projetos.html" class="menu__link">Projetos</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="html/contato.html" class="menu__link">Contato</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link"><i class="fa-solid fa-globe"></i></a>
+                </li>
+                <!-- <li class="menu__item">
+                    <a href="en/index.html" class="menu__link"><img src="img/united-states.png" alt="" class="flag"></a>
+                </li>
+                <li>
+                    <a href="it/index.html" class="menu__link"><img src="img/italy.png" alt="" class="flag"></a>
+                </li>
+                     -->
                  
-                <li id="pt"><a href="#">&lt; <span id="span-rosa">Olá, Mundo</span>/&gt;</a></li>
+                
 
-                <!-- ingles -->
-                <li id="english">
-                    <a href="en/index.html"><span id="span-verde">.div </span>{ <span id="span-azul">Hello</span><span
-                    id="span-rosa">:</span><span id="span-roxo"> World</span> }
-                    </a>
-                </li>
+            </ul><!--fim menu lista-->
 
-
-                <!-- italiano -->
-                <li id="italiano">
-                    <a href="it/index.html"><span id="span-roxo">console</span>.<span id="span-verde">log</span>(<span
-                        id="span-yellow">'Ciao, Mondo'</span>)
-                    </a>
-                    
-                    
-                </li>
-
-            </ul>
-
-
-        <!-- Fim da div hello-word -->
-        </div>
-
-       
-
-        <!-- menu com dropdown -->
-        <div class="hamburguer">
-            <!--  Icone do menu com função onclick -->
-            <span id="burguer" class="material-symbols-rounded" onclick="clickMenu()"> menu </span>
+        </nav>
 
 
 
-            <!-- Menu de páginas -->
-
-            <nav id="nav" class="menu">
-
-                <ul class="menu__lista"> <!--início menu lista-->
-                    <li class="menu__item">
-                        <a href="#" class="active menu__link">Home</a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a href="html/sobre-mim.html" class="menu__link">Sobre&nbsp;mim</a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a href="html/projetos.html" class="menu__link">Projetos</a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a href="html/contato.html" class="menu__link">Contato</a>
-                    </li>
-                    
-                    <li class="menu__item dropdown">
-                        <a href="" class="menu__link"><i class="fa-solid fa-globe"></i></a>
-                        <div>
-                            <a href="en/index.html">English</a>
-                            <a href="it/index.html">Italiano</a>
-                        </div>
-                    </li>
-                    
-                </ul><!--fim menu lista-->
-
-            </nav>
-        </div>
-
-        
     </header> <!-- fim do header -->
 
 
-    <main>  
-        <section class="grid-container">
+    <main>
+
+        <section id="home" class="grid-container">
+            <!-- Apresentação olá mundo -->
+            <div class="hello-world">
+                <ul>
+                    <!-- portugues -->
+
+                    <li id="pt"><a href="#">&lt; <span id="span-rosa">Olá, Mundo</span>/&gt;</a></li>
+
+                    <!-- ingles -->
+                    <li id="english">
+                        <a href="en/index.html"><span id="span-verde">.div </span>{ <span
+                                id="span-azul">Hello</span><span id="span-rosa">:</span><span id="span-roxo">
+                                World</span> }
+                        </a>
+                    </li>
+
+
+                    <!-- italiano -->
+                    <li id="italiano">
+                        <a href="it/index.html"><span id="span-roxo">console</span>.<span
+                                id="span-verde">log</span>(<span id="span-yellow">'Ciao, Mondo'</span>)
+                        </a>
+
+
+                    </li>
+
+                </ul>
+
+
+                <!-- Fim da div hello-word -->
+            </div>
             <div class="item-1"></div>
             <div class="item-2">
                 <h1 id="meu-nome">Jéssica Ferraz</h1>
                 <h2 id="work">Desenvolvedora web</h2>
-            </div>    
+            </div>
         </section>
-        
 
-        
+
+        <section id="about"></section>
+        <section id="projetos"></section>
+        <section id="contato"></section>
+
 
         <!-- Currículo -->
         <div class="curriculo">
-            <a href="Currículo - Jessica Ferraz.pdf" download="cv-Jessica Ferraz">Currículo&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i></a>
-        <!-- Fim da div currículo -->
+            <a href="Currículo - Jessica Ferraz.pdf" download="cv-Jessica Ferraz">Currículo&nbsp;&nbsp;<i
+                    class="fa-solid fa-file-arrow-down"></i></a>
+            <!-- Fim da div currículo -->
         </div>
 
 
-        
+
 
     </main>
 
@@ -159,13 +167,27 @@
     <footer>
         <h2>Referências</h2>
         <ul>
-            
-            <li>Favicon gerada por: <a href="https://favicon.io/" target="_blank" rel="noopener noreferrer">Favicon.io</a>
+
+            <li>Favicon gerada por: <a href="https://favicon.io/" target="_blank"
+                    rel="noopener noreferrer">Favicon.io</a>
             </li>
-            <li><a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank">Libras: Integrando a uma Página Web por gov.br</a></li>
+            <li>
+                reset.css baseado em <a href="https://www.joshwcomeau.com/css/custom-css-reset/" target="_blank"
+                    rel="noopener noreferrer">A modern CSS Reset</a> de <a href="https://www.joshwcomeau.com/"
+                    target="_blank" rel="noopener noreferrer">Joshua Comeau</a>
+            </li>
+            <li>
+                <a href="https://br.freepik.com/icone/italia_3373278#fromView=search&page=1&position=65&uuid=0657b30b-f753-4266-8cdf-a13444676f5b">Ícone de Creatype</a>
+            </li>
+
+            <li>
+                <a href="https://br.freepik.com/icone/estados-unidos_3373318#fromView=resource_detail&position=3">Ícone de Creatype</a>
+            </li>
+            <li><a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank">Libras:
+                    Integrando a uma Página Web por gov.br</a></li>
 
         </ul>
-        
+
 
         <!-- link para as minhas redes -->
         <div class="social-media">
@@ -176,8 +198,8 @@
 
             <a href="https://www.linkedin.com/in/ferrazjaa/" target="_blank" rel="noopener noreferrer"> <i
                     class="fa-brands fa-linkedin"></i></a>
-        
-        <!-- Fim da div das minhas redes -->
+
+            <!-- Fim da div das minhas redes -->
         </div>
 
         <nav class="menuRodape">
@@ -209,9 +231,9 @@
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-    <!-- Fim da div configuração de acessibilidade -->
+        <!-- Fim da div configuração de acessibilidade -->
     </div>
 
     <!-- ÁREA JAVASCRIPT -------------------------------------------------------------------------------------------- -->

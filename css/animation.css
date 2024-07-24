@@ -1,0 +1,84 @@
+.hello-world {
+    font-size: 0.80em;
+    /* max-width: 50%; */
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-weight: 500;
+}
+
+.hello-world ul{
+    list-style-type: none;
+}
+
+/* ANIMAÇÃO DE NETRADA DAS PALAVRAS */
+.hello-world li{
+    opacity: 0;
+    transform: translateX(-20px);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.hello-world #pt{
+    animation-name: entrada-frase1;
+    animation-delay: 0.5s;
+}
+.hello-world #english {
+    animation-name: entrada-frase2;
+    animation-delay: 1s;
+}
+.hello-world #italiano {
+    animation-name: entrada-frase3;
+    animation-delay: 1.5s;
+}
+
+@keyframes entrada-frase1 {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes entrada-frase2 {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes entrada-frase3 {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#span-rosa{
+    color: #ff79c6;
+    font-weight: 500;
+}
+
+#span-verde{
+    color: #50fa7b;
+    
+}
+
+#span-azul{
+    color:#8be9fd;
+}
+#span-roxo{
+    color: #bd93f9;
+}
+
+#span-yellow{
+    color: #F1FA8C;
+}
+
+#english{
+    margin-left: 3.5% ;
+}
+
+#italiano{
+    margin-left: 7%;
+}
