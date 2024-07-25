@@ -1,18 +1,16 @@
 header{
-    align-items: center;
     background-color: var(--cor-azul-escuro);
     display: flex;
-    height: 100%;
     justify-content: space-between;
-    padding: 2rem;
+    height: 100%;
     width: 100%;
 }
 
 .logo{
     color: #fff;
     font-family: 'Hurricane', cursive;
-    font-size: 2.7rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .menu__lista{
@@ -20,22 +18,79 @@ header{
 }
 
 .menu__item{
-    
     display: inline-block;
     margin-right: 1.5rem;
 }
-.menu__item:last-child{
+
+.menu__item:last-child .menu__link{
     margin-right: 0;
 }
 
 .menu__link{
     color: #fff;
-    font-size: 2rem;
 }
-.menu__link:hover{
+
+.dropdown__conteudo{
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    width: auto; 
+    z-index: 1;
+}
+.dropdown__conteudo a{
+    color: #fff;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown__conteudo{
+    display: block;
+}
+
+.menu__link:hover, .atual{
     text-decoration: underline;
 }
 
-.flag{
-    width: 15%;
+
+/* MEDIAS QUERIES ***************************************************************************** */
+@media screen and (min-width: 0) {
+    header{
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .logo{
+        font-size: 3.7rem;
+    }
+
+    .menu{
+        margin-right: 0;
+    }
+    .menu__link, .dropdown__conteudo a{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    header{
+        align-items: baseline;
+        flex-direction: row;
+        padding: 4rem;
+    }
+    .logo{
+        font-size: 4rem;
+    }
+    .menu{
+        margin-right: 5.5rem;
+    }
+    .menu__item:not(:last-child){
+        margin-right: 4rem;
+    }
+    .menu__link{
+        font-size: 3rem;
+    }
+
+    .dropdown__conteudo a{
+        font-size: 2.35rem;
+    }
 }

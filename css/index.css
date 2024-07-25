@@ -20,8 +20,16 @@
     background-image: url(../img/me2.jpg);
     background-size: cover;
     background-repeat: no-repeat; 
-} */
 
+    
+.container{
+    padding-right: 6%;
+    padding-left: 6%;
+}
+} */
+#home{
+    height: 100vh;
+}
 /* Estilizando meu nome */
 #meu-nome{
     font-family: 'Hurricane', cursive;
