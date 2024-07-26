@@ -15,7 +15,7 @@
     <meta property="og:title" content="Portfólio de Jessica Ferraz">
     <meta property="og:description"
         content="Desenvolvedor web com foco em HTML, CSS e JavaScript. Confira meus projetos e entre em contato.">
-    <meta property="og:image" content="URL_da_sua_imagem.jpg">
+    <meta property="og:image" content="img/jessicaferraz.jpg">
     <meta property="og:url" content="https://ferrazjaa.github.io/">
     <meta property="og:type" content="website">
 
@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
 
 
@@ -80,7 +80,8 @@
                     <a href="html/contato.html" class="menu__link">Contato</a>
                 </li>
                 <li class="menu__item dropdown">
-                    <a href="javascript:void(0)" class="menu__link dropdown__botao"><i class="fa-solid fa-globe"></i></a>
+                    <a href="javascript:void(0)" class="menu__link dropdown__botao"><i
+                            class="fa-solid fa-globe"></i></a>
                     <div class="dropdown__conteudo">
                         <a href="#" class="atual">Português</a>
                         <a href="en/index.html">English</a>
@@ -96,17 +97,17 @@
 
 
     <main>
+        <section class="grettings">
+            <div class="greetings">
+                <ul class="greetings__lista">
 
-        <section id="home" class="grid-container">
-            <!-- Apresentação olá mundo -->
-            <div class="hello-world">
-                <ul>
                     <!-- portugues -->
-
-                    <li id="pt"><a href="#">&lt; <span id="span-rosa">Olá, Mundo</span>/&gt;</a></li>
+                    <li id="pt" class="greetings__item">
+                        <a href="#">&lt; <span id="span-rosa">Olá, Mundo</span>/&gt;</a>
+                    </li>
 
                     <!-- ingles -->
-                    <li id="english">
+                    <li id="english" class="greetings__item">
                         <a href="en/index.html"><span id="span-verde">.div </span>{ <span
                                 id="span-azul">Hello</span><span id="span-rosa">:</span><span id="span-roxo">
                                 World</span> }
@@ -115,7 +116,7 @@
 
 
                     <!-- italiano -->
-                    <li id="italiano">
+                    <li id="italiano" class="greetings__item">
                         <a href="it/index.html"><span id="span-roxo">console</span>.<span
                                 id="span-verde">log</span>(<span id="span-yellow">'Ciao, Mondo'</span>)
                         </a>
@@ -124,16 +125,37 @@
                     </li>
 
                 </ul>
+   
+            </div><!-- Fim da div hello-word -->
+        </section> 
+
+        <!-- <section id="home" class="container"> -->
+            <!-- Apresentação olá mundo -->
 
 
-                <!-- Fim da div hello-word -->
+        <section class="home" id="home">
+
+            <div class="home__welcome">
+                <h2 class="home__titulo">Bem vindo(a), ao meu Portfólio!</h2>
+                <p class="home__work">Eu sou <span class="nome">Jessica Ferraz</span>Desenvolvedora Web </p>
             </div>
-            <div class="item-1"></div>
-            <div class="item-2">
-                <h1 id="meu-nome">Jéssica Ferraz</h1>
-                <h2 id="work">Desenvolvedora web</h2>
+
+            <div class="home__details">
+                <img src="img/jessicaferraz.jpg" alt="Foto de Jessica Ferraz" class="home__apresentacao--foto"> 
+            
+                <!-- Currículo -->
+                <div class="curriculo">
+                    <a href="Currículo - Jessica Ferraz.pdf" download="cv-Jessica Ferraz">Currículo&nbsp;&nbsp;<i
+                            class="fa-solid fa-file-arrow-down"></i></a>
+                    <!-- Fim da div currículo -->
+                </div>
             </div>
-        </section>
+            
+
+        </section><!--Fim da seção home-->
+
+
+        
 
 
         <section id="about"></section>
@@ -141,12 +163,7 @@
         <section id="contato"></section>
 
 
-        <!-- Currículo -->
-        <div class="curriculo">
-            <a href="Currículo - Jessica Ferraz.pdf" download="cv-Jessica Ferraz">Currículo&nbsp;&nbsp;<i
-                    class="fa-solid fa-file-arrow-down"></i></a>
-            <!-- Fim da div currículo -->
-        </div>
+
 
 
 
@@ -169,11 +186,14 @@
                     target="_blank" rel="noopener noreferrer">Joshua Comeau</a>
             </li>
             <li>
-                <a href="https://br.freepik.com/icone/italia_3373278#fromView=search&page=1&position=65&uuid=0657b30b-f753-4266-8cdf-a13444676f5b">Ícone de Creatype</a>
+                <a
+                    href="https://br.freepik.com/icone/italia_3373278#fromView=search&page=1&position=65&uuid=0657b30b-f753-4266-8cdf-a13444676f5b">Ícone
+                    de Creatype</a>
             </li>
 
             <li>
-                <a href="https://br.freepik.com/icone/estados-unidos_3373318#fromView=resource_detail&position=3">Ícone de Creatype</a>
+                <a href="https://br.freepik.com/icone/estados-unidos_3373318#fromView=resource_detail&position=3">Ícone
+                    de Creatype</a>
             </li>
             <li><a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank">Libras:
                     Integrando a uma Página Web por gov.br</a></li>

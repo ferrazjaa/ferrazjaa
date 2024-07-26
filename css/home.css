@@ -1,0 +1,60 @@
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home__apresentacao{
+    display: grid;
+  
+}
+.home__apresentacao--foto{
+    width: 30%;
+}
+.home__titulo{
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 5%;
+
+}
+
+.nome{
+    font-family: 'Hurricane', cursive;
+}
+
+
+
+/* Estilização do currículo */
+.curriculo{
+    width: 50%;
+
+    margin-left: 25%;
+    text-align: center;
+    padding: 4%;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3% 15%;
+   
+
+    background-color: #233057;
+    font-weight: 500;
+
+    cursor: pointer;
+
+}
+
+.curriculo a{
+    color: #FFFFF6;
+    text-decoration: none;
+
+}
+
+.curriculo a:visited{
+    color: #FFFFF6;
+    
+}
+
+.curriculo:hover{
+    transform: scale(1.1);
+}

@@ -1,34 +1,31 @@
-.hello-world {
-    font-size: 0.80em;
-    /* max-width: 50%; */
-    margin-left: 5%;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.greetings{
+    font-size: 2rem;
     font-weight: 500;
+    margin-top: 4rem;
 }
 
-.hello-world ul{
+.greetings__lista{
     list-style-type: none;
-}
+} 
 
 /* ANIMAÇÃO DE NETRADA DAS PALAVRAS */
-.hello-world li{
-    opacity: 0;
-    transform: translateX(-20px);
+.greetings__item{
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateX(-20px);
 }
 
-.hello-world #pt{
+.greetings #pt{
     animation-name: entrada-frase1;
     animation-delay: 0.5s;
 }
-.hello-world #english {
+.greetings #english {
     animation-name: entrada-frase2;
     animation-delay: 1s;
 }
-.hello-world #italiano {
+.greetings #italiano {
     animation-name: entrada-frase3;
     animation-delay: 1.5s;
 }
@@ -76,9 +73,9 @@
 }
 
 #english{
-    margin-left: 3.5% ;
+    text-indent: 7rem;
 }
 
 #italiano{
-    margin-left: 7%;
+    text-indent: 14rem;
 }

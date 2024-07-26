@@ -19,9 +19,9 @@
     --gradiente: linear-gradient(to bottom right, #c96567, #0728319f);
 }
 
-html {
+/* html {
     background-image: var(--gradiente);
-}
+} */
 
 body{
     /* color: #ffff; */
@@ -43,8 +43,11 @@ a{
 */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-  }
+}
 
+.container{
+    padding: 0 6%;
+}
 
 /* MEDIA QUERIES ****************************************************************************** */
 
