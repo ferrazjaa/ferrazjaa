@@ -1,18 +1,17 @@
 .greetings{
     font-size: 2rem;
     font-weight: 500;
-    margin-top: 4rem;
 }
 
 .greetings__lista{
     list-style-type: none;
 } 
 
-/* ANIMAÇÃO DE NETRADA DAS PALAVRAS */
+/* ANIMAÇÃO DE ENTRADA DAS PALAVRAS */
 .greetings__item{
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     opacity: 0;
     transform: translateX(-20px);
 }
@@ -51,31 +50,43 @@
     }
 }
 
-#span-rosa{
+.highlight--rosa{
     color: #ff79c6;
     font-weight: 500;
 }
 
-#span-verde{
+.highlight--verde{
     color: #50fa7b;
     
 }
-
-#span-azul{
+.highlight--azul{
     color:#8be9fd;
 }
-#span-roxo{
+.highlight--roxo{
     color: #bd93f9;
 }
 
-#span-yellow{
+.highlight--amarelo{
     color: #F1FA8C;
 }
 
-#english{
-    text-indent: 7rem;
-}
 
-#italiano{
-    text-indent: 14rem;
+
+@media screen and (min-width: 0) {
+    #english{
+        text-indent: 3.5rem;
+    }
+    
+    #italiano{
+        text-indent: 7rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    #english{
+        text-indent: 5rem;
+    }
+    
+    #italiano{
+        text-indent: 10rem;
+    }
 }

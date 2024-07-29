@@ -1,60 +1,98 @@
-#home{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.home__apresentacao{
+.home{
+    align-items: center;
     display: grid;
-  
 }
-.home__apresentacao--foto{
-    width: 30%;
-}
-.home__titulo{
-    text-align: center;
-    font-size: 2rem;
-    color: #000000;
-    margin-bottom: 5%;
 
+.greetings{
+    grid-area: greet;
+}
+.home__details{
+    grid-area: details; 
+    text-align: center;
+}
+
+.home__photo{
+    display: flex;
+    grid-area: photo;
+    justify-content: center;
+}
+
+.home__photo--photo{
+    width: 50%;
 }
 
 .nome{
     font-family: 'Hurricane', cursive;
 }
 
-
-
 /* Estilização do currículo */
-.curriculo{
-    width: 50%;
-
-    margin-left: 25%;
-    text-align: center;
-    padding: 4%;
-    
+.home__curriculum{
+    background-color: #233057;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 3% 15%;
-   
-
-    background-color: #233057;
+    color: #FFFFF6;
+    font-size: 2.25rem;
     font-weight: 500;
-
-    cursor: pointer;
+    grid-area: curriculum;
+    padding: 1.25rem;
 
 }
 
-.curriculo a{
+.home__curriculum:visited{
     color: #FFFFF6;
-    text-decoration: none;
-
 }
 
-.curriculo a:visited{
-    color: #FFFFF6;
-    
-}
-
-.curriculo:hover{
+.home__curriculum:hover{
     transform: scale(1.1);
+}
+
+/* ****************************** MEDIA QUERIES*********************************************** */
+@media screen and (min-width: 0) {
+    .home{
+        align-content: space-around;
+        grid-template-areas: 
+        'greet'
+        'details'
+        'photo'
+        'curriculum'
+    ;
+    /* grid-template-rows: auto;  */
+    height: calc(100vh - 2rem);
+    justify-items: center;
+    }
+
+    .home__titulo{
+        font-size: 2.5rem;
+    }
+
+    .home__description{ 
+        font-size: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .home{
+        align-content: space-between;
+        grid-template-columns: 45% 55%;
+        grid-template-areas: 
+       'greet photo'
+        'greet details'
+        'greet curriculum'
+    ;
+    }
+
+    .home__titulo{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .home__description{ 
+        font-size: 2.5rem;
+    }
+
+    .home__photo{
+        justify-content: end;
+    }
 }

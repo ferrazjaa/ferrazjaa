@@ -61,7 +61,7 @@
     <header class="cabecalho">
 
         <!-- logo -->
-        <h1><a href="#home" class="logo">Jessica Ferraz</a></h1>
+        <h1><a href="#" class="logo">Jessica Ferraz</a></h1>
 
         <!-- Inicio menu -->
         <nav id="nav" class="menu">
@@ -97,19 +97,22 @@
 
 
     <main>
-        <section class="grettings">
+
+        <section class="home container" id="home">
+
             <div class="greetings">
                 <ul class="greetings__lista">
 
                     <!-- portugues -->
                     <li id="pt" class="greetings__item">
-                        <a href="#">&lt; <span id="span-rosa">Olá, Mundo</span>/&gt;</a>
+                        <a href="#">&lt; <span class="highlight highlight--rosa">Olá, Mundo</span>/&gt;</a>
                     </li>
 
                     <!-- ingles -->
                     <li id="english" class="greetings__item">
-                        <a href="en/index.html"><span id="span-verde">.div </span>{ <span
-                                id="span-azul">Hello</span><span id="span-rosa">:</span><span id="span-roxo">
+                        <a href="en/index.html"><span class="highlight highlight--verde">.div </span>{ <span
+                                class="highlight highlight--azul">Hello</span><span
+                                class="highlight highlight--rosa">:</span><span class="highlight highlight--roxo">
                                 World</span> }
                         </a>
                     </li>
@@ -117,45 +120,41 @@
 
                     <!-- italiano -->
                     <li id="italiano" class="greetings__item">
-                        <a href="it/index.html"><span id="span-roxo">console</span>.<span
-                                id="span-verde">log</span>(<span id="span-yellow">'Ciao, Mondo'</span>)
+                        <a href="it/index.html"><span class="highlight highlight--roxo">console</span>.<span
+                                class="highlight highlight--verde">log</span>(<span
+                                class="highlight highlight--amarelo">'Ciao, Mondo'</span>)
                         </a>
 
 
                     </li>
 
                 </ul>
-   
-            </div><!-- Fim da div hello-word -->
-        </section> 
 
-        <!-- <section id="home" class="container"> -->
-            <!-- Apresentação olá mundo -->
-
-
-        <section class="home" id="home">
-
-            <div class="home__welcome">
-                <h2 class="home__titulo">Bem vindo(a), ao meu Portfólio!</h2>
-                <p class="home__work">Eu sou <span class="nome">Jessica Ferraz</span>Desenvolvedora Web </p>
-            </div>
+            </div> <!--Fim greetings-->
 
             <div class="home__details">
-                <img src="img/jessicaferraz.jpg" alt="Foto de Jessica Ferraz" class="home__apresentacao--foto"> 
-            
-                <!-- Currículo -->
-                <div class="curriculo">
-                    <a href="Currículo - Jessica Ferraz.pdf" download="cv-Jessica Ferraz">Currículo&nbsp;&nbsp;<i
-                            class="fa-solid fa-file-arrow-down"></i></a>
-                    <!-- Fim da div currículo -->
-                </div>
+                <h2 class="home__titulo">Bem vindo(a), ao meu Portfólio!</h2>
+                <p class="home__description">Eu sou <span class="nome">Jessica Ferraz </span>Desenvolvedora Web </p>
             </div>
             
+
+            <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer" class="home__photo">
+                <img src="img/jessicaferraz.jpg" alt="Foto de Jessica Ferraz" class="home__photo--photo">
+            </a> 
+
+
+            <!-- Currículo -->
+            <a href="Currículo - Jessica Ferraz.pdf" download="cv-Jessica Ferraz"
+                class="home__curriculum">Currículo&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i></a>
+            <!-- Fim da div currículo -->
+
+
+
 
         </section><!--Fim da seção home-->
 
 
-        
+
 
 
         <section id="about"></section>
