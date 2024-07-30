@@ -57,8 +57,11 @@
         'curriculum'
     ;
     /* grid-template-rows: auto;  */
-    height: calc(100vh - 2rem);
+    /* height: calc(100vh - 2rem); */
     justify-items: center;
+    }
+    .greetings, .home__titulo, .home__photo{
+        margin-top: 4rem;
     }
 
     .home__titulo{
