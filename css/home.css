@@ -61,11 +61,11 @@
     justify-items: center;
     }
     .greetings, .home__titulo, .home__photo{
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
 
     .home__titulo{
-        font-size: 2.5rem;
+        font-size: 2.75rem;
     }
 
     .home__description{ 
@@ -84,6 +84,7 @@
         'greet details'
         'greet curriculum'
     ;
+    height: 100vh;
     }
 
     .home__titulo{
