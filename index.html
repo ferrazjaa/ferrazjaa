@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/footer.css">
 
 
@@ -73,11 +74,11 @@
                 </li>
 
                 <li class="menu__item">
-                    <a href="html/projetos.html" class="menu__link">Projetos</a>
+                    <a href="#projects" class="menu__link">Projetos</a>
                 </li>
 
                 <li class="menu__item">
-                    <a href="html/contato.html" class="menu__link">Contato</a>
+                    <a href="#contact" class="menu__link">Contato</a>
                 </li>
                 <li class="menu__item dropdown">
                     <a href="javascript:void(0)" class="menu__link dropdown__botao"><i
@@ -99,7 +100,7 @@
     <main>
 
         <!--Inicio da seção home-->
-        <section class="home container" id="home">
+        <section class="home" id="home">
 
             <div class="greetings">
                 <ul class="greetings__lista">
@@ -137,11 +138,11 @@
                 <h2 class="home__titulo">Bem vindo(a), ao meu Portfólio!</h2>
                 <p class="home__description">Eu sou <span class="nome">Jessica Ferraz </span>Desenvolvedora Web </p>
             </div>
-            
+
 
             <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer" class="home__photo">
                 <img src="img/jessicaferraz.jpg" alt="Foto de Jessica Ferraz" class="home__photo--photo">
-            </a> 
+            </a>
 
 
             <!-- Currículo -->
@@ -155,15 +156,156 @@
         </section><!--Fim da seção home-->
 
         <!-- Inicio da seção sobre -->
-        <section id="about" class="about container">
-            <h2>Sobre mim</h2>
-            <p>
-                Sou formada em Engenharia Metalúrgica e uma entusiasta da internet. Minha curiosidade e paixão pelo ambiente digital me levaram a explorar o desenvolvimento web. Há um ano, iniciei essa jornada, dedicando-me a aprender e aprimorar minhas habilidades técnicas. Estou determinada a criar soluções inovadoras e eficientes na web, combinando minha formação em engenharia com uma visão criativa e prática.
-            </p>
+        <section id="about" class="about">
+            <h2 class="title">Sobre mim</h2>
+
+            <div class="about__description"> 
+                <p>
+                    Sou formada em Engenharia Metalúrgica e uma entusiasta da internet. Minha curiosidade e paixão pelo
+                    ambiente digital me levaram a explorar o desenvolvimento web. Há um ano, iniciei essa jornada,
+                    dedicando-me a aprender e aprimorar minhas habilidades técnicas. Estou determinada a criar soluções
+                    inovadoras e eficientes na web, combinando minha formação em engenharia com uma visão criativa e
+                    prática.
+                </p>
+                <!-- redes sociais -->
+                <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <!-- linkedin -->
+                <a href="https://www.linkedin.com/in/ferrazjaa/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            
+
+            <aside class="habilidades">
+                <h3>Minhas habilidades</h3>
+
+                <!-- <p>HTML</p> -->
+                <div class="img-porcentagem">
+                    <img src="img/logo-html-5-256.png" alt="Logo HTML 5">
+
+                    <!-- Barra de Progresso -->
+                    <div class="containers">
+                        <div class="primeiro-container">
+                            <div class="segundo-container" style="width:90%">90%</div>
+                        </div>
+                    </div>
+                    <!-- Fim dos Containers da barra de progresso  -->
+
+                </div>
+                <!-- Fim do seção HTML -->
+
+
+                <!-- <p>CSS</p> -->
+                <div class="img-porcentagem">
+                    <img src="img/logo-css-3-256.png" alt="Logo CSS3">
+                    <div class="containers">
+                        <div class="primeiro-container">
+                            <div class="segundo-container" style="width:80%">80%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim da seção CSS -->
+
+                <!-- <p>JavaScript</p> -->
+                <div class="img-porcentagem">
+                    <img src="img/logo-javascript-256.png" alt="Logo JavaScript">
+                    <div class="containers">
+                        <div class="primeiro-container">
+                            <div class="segundo-container" style="width:60%">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim da seção JS -->
+
+                <!-- <p>Bootstrap</p> -->
+                <div class="img-porcentagem">
+                    <img src="img/bootstrap-256.png" alt="Logo Bootstrap">
+                    <div class="containers">
+                        <div class="primeiro-container">
+                            <div class="segundo-container" style="width:55%">55%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim da seção Boostrap -->
+
+                <!-- <p>Python</p> -->
+                <div class="img-porcentagem">
+                    <img src="img/logo-python-256.png" alt="Logo Python">
+                    <div class="containers">
+                        <div class="primeiro-container">
+                            <div class="segundo-container" style="width:15%">15%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim da seção em python -->
+
+                <!-- PHP -->
+                <div class="img-porcentagem">
+                    <img src="" alt="Logo PHP">
+                    <div class="containers">
+                        <div class="primeiro-container">
+                            <div class="segundo-container" style="width:15%">15%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim da proxima habilidade -->
+
+            </aside>
+
+            <div class="services">
+                <h3>O que posso fazer por você</h3>
+                <article class="service__card">
+                    <h4 class="service__title">Desenvolvimento de Landing Pages</h4>
+                    <p class="service__description">Criação de páginas de aterrissagem otimizadas para conversão, com
+                        design atraente e responsivo.</p>
+                </article>
+
+                <article class="service__card">
+                    <h4 class="service__title">Desenvolvimento de Sites Responsivos</h4>
+                    <p class="service__description">Construção de sites que funcionam perfeitamente em todos os
+                        dispositivos, garantindo uma ótima experiência do usuário.</p>
+                </article>
+
+                <article class="service__card">
+                    <h4 class="service__title">Desenvolvimento Front-end</h4>
+                    <p class="service__description">Implementação de interfaces de usuário dinâmicas e interativas
+                        usando HTML, CSS e JavaScript.</p>
+                </article>
+
+                <article class="service__card">
+                    <h4 class="service__title">SEO e Otimização de Performance</h4>
+                    <p class="service__description">Melhoria da visibilidade do site nos mecanismos de busca e
+                        otimização para carregamento rápido.</p>
+                </article>
+
+                <article class="service__card">
+                    <h4 class="service__title">Integração com APIs</h4>
+                    <p class="service__description">Conexão de sites com serviços externos via APIs para funcionalidades
+                        avançadas.</p>
+                </article>
+
+                <article class="service__card">
+                    <h4 class="service__title">Consultoria em UX/UI</h4>
+                    <p class="service__description">Orientação e planejamento para criar experiências de usuário
+                        intuitivas e design visual atraente.</p>
+                </article>
+
+            </div>
+
+
         </section><!--Fim da seção sobre-->
 
-        <section id="projetos"></section>
-        <section id="contato"></section>
+        <!--Section projects-->
+        <section id="projects">
+            <h2 class="title">Projetos</h2>
+        </section><!--End section projects-->
+
+        <!--Section Contact-->
+        <section id="contact">
+            <h2 class="title">Contato</h2>
+        </section> <!--End section contact-->
 
 
 
@@ -188,7 +330,7 @@
                     rel="noopener noreferrer">A modern CSS Reset</a> de <a href="https://www.joshwcomeau.com/"
                     target="_blank" rel="noopener noreferrer">Joshua Comeau</a>
             </li>
-            <li>
+            <!-- <li>
                 <a
                     href="https://br.freepik.com/icone/italia_3373278#fromView=search&page=1&position=65&uuid=0657b30b-f753-4266-8cdf-a13444676f5b">Ícone
                     de Creatype</a>
@@ -197,6 +339,8 @@
             <li>
                 <a href="https://br.freepik.com/icone/estados-unidos_3373318#fromView=resource_detail&position=3">Ícone
                     de Creatype</a>
+            </li> -->
+            <li>Logos de <a href="https://logospng.org/" target="_blank" rel="noopener noreferrer">Logos png</a>
             </li>
             <li><a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank">Libras:
                     Integrando a uma Página Web por gov.br</a></li>

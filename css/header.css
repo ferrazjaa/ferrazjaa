@@ -19,10 +19,10 @@ header{
 
 .menu__item{
     display: inline-block;
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 
-.menu__item:last-child .menu__link{
+.menu__item:last-child{
     margin-right: 0;
 }
 
@@ -40,7 +40,7 @@ header{
 .dropdown__conteudo a{
     color: #fff;
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: .7rem;
     text-align: left;
 }
 
@@ -61,36 +61,51 @@ header{
         padding: 2rem;
     }
     .logo{
-        font-size: 3.7rem;
+        font-size: 3.5rem;
     }
 
     .menu{
         margin-right: 0;
     }
+    
     .menu__link, .dropdown__conteudo a{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 }
 @media screen and (min-width: 768px) {
     header{
         align-items: baseline;
         flex-direction: row;
+        justify-content: space-between;
         padding: 4rem;
     }
     .logo{
         font-size: 4.2rem;
     }
     .menu{
-        margin-right: 5.5rem;
+        margin-right: 5rem;
     }
     .menu__item:not(:last-child){
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
     .menu__link{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .dropdown__conteudo a{
         font-size: 2.35rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .logo{
+        font-size: 5rem;
+    }
+
+    .menu{
+        margin-right: 10rem;
+    }
+    .menu__link{
+        font-size: 3rem;
     }
 }

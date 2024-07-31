@@ -1,5 +1,5 @@
 .greetings{
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
@@ -74,19 +74,23 @@
 
 @media screen and (min-width: 0) {
     #english{
-        text-indent: 3.5rem;
+        text-indent: 3rem;
     }
     
     #italiano{
-        text-indent: 7rem;
+        text-indent: 6rem;
     }
 }
-@media screen and (min-width: 768px) {
-    #english{
+@media screen and (min-width: 1024px) {
+    .greetings{
+        font-size: 2.5rem;
+    }
+
+    /* #english{
         text-indent: 5rem;
     }
     
     #italiano{
         text-indent: 10rem;
-    }
+    } */
 }

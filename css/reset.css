@@ -15,7 +15,7 @@
 :root{
     --cor-azul-escuro: #0728319f;
     --cor-rosa:#c96567;
-    font-size: 42%;
+    font-size: 62.5%;
     --gradiente: linear-gradient(to bottom right, #c96567, #0728319f);
 }
 
@@ -45,37 +45,10 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-.container{
+section{
     padding: 0 6%;
 }
 
-/* MEDIA QUERIES ****************************************************************************** */
-
-@media screen and (min-width:  576px) {
-    :root {
-        font-size: 46%;
-    }
-    
-}
-@media screen and (min-width: 768px) {
-    :root {
-        font-size: 50%;
-    }
-    
-}
-
-@media screen and (min-width: 992px) {
-    :root {
-        font-size: 54%;
-    }
-    
-}
-
-@media screen and (min-width:1024px){
-    :root {
-        font-size: 62.5%;
-    }
-}
 
 /* SCROLLBAR-----------------------------------  */
 
