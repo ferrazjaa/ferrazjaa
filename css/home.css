@@ -53,8 +53,7 @@
         'photo'
         'curriculum'
     ;
-    /* grid-template-rows: auto;  */
-    /* height: calc(100vh - 2rem); */
+    height: 100vh;
     justify-items: center;
     }
     .greetings, .home__titulo, .home__photo, .home__curriculum{
@@ -84,7 +83,6 @@
         'greet details'
         'greet curriculum'
     ;
-    height: 100vh;
     margin-top: 5rem;
     }
     

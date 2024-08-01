@@ -15,7 +15,7 @@
     <meta property="og:title" content="Portfólio de Jessica Ferraz">
     <meta property="og:description"
         content="Desenvolvedor web com foco em HTML, CSS e JavaScript. Confira meus projetos e entre em contato.">
-    <meta property="og:image" content="img/jessicaferraz.jpg">
+    <meta property="og:image" content="img/jessicaferraz.png">
     <meta property="og:url" content="https://ferrazjaa.github.io/">
     <meta property="og:type" content="website">
 
@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/footer.css">
 
 
@@ -141,7 +142,7 @@
 
 
             <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer" class="home__photo">
-                <img src="img/jessicaferraz.jpg" alt="Foto de Jessica Ferraz" class="home__photo--photo">
+                <img src="img/jessicaferraz.png" alt="Foto de Jessica Ferraz" class="home__photo--photo">
             </a>
 
 
@@ -160,100 +161,29 @@
             <h2 class="title">Sobre mim</h2>
 
             <div class="about__description"> 
-                <p>
+                <p class="about__paragraph">
                     Sou formada em Engenharia Metalúrgica e uma entusiasta da internet. Minha curiosidade e paixão pelo
                     ambiente digital me levaram a explorar o desenvolvimento web. Há um ano, iniciei essa jornada,
                     dedicando-me a aprender e aprimorar minhas habilidades técnicas. Estou determinada a criar soluções
                     inovadoras e eficientes na web, combinando minha formação em engenharia com uma visão criativa e
                     prática.
                 </p>
+                
                 <!-- redes sociais -->
-                <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <!-- linkedin -->
-                <a href="https://www.linkedin.com/in/ferrazjaa/" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
+                 <address class="about__address">
+                    <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/in/ferrazjaa/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                 </address>
+                
             </div>
             
 
-            <aside class="habilidades">
-                <h3>Minhas habilidades</h3>
-
-                <!-- <p>HTML</p> -->
-                <div class="img-porcentagem">
-                    <img src="img/logo-html-5-256.png" alt="Logo HTML 5">
-
-                    <!-- Barra de Progresso -->
-                    <div class="containers">
-                        <div class="primeiro-container">
-                            <div class="segundo-container" style="width:90%">90%</div>
-                        </div>
-                    </div>
-                    <!-- Fim dos Containers da barra de progresso  -->
-
-                </div>
-                <!-- Fim do seção HTML -->
-
-
-                <!-- <p>CSS</p> -->
-                <div class="img-porcentagem">
-                    <img src="img/logo-css-3-256.png" alt="Logo CSS3">
-                    <div class="containers">
-                        <div class="primeiro-container">
-                            <div class="segundo-container" style="width:80%">80%</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- fim da seção CSS -->
-
-                <!-- <p>JavaScript</p> -->
-                <div class="img-porcentagem">
-                    <img src="img/logo-javascript-256.png" alt="Logo JavaScript">
-                    <div class="containers">
-                        <div class="primeiro-container">
-                            <div class="segundo-container" style="width:60%">60%</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- fim da seção JS -->
-
-                <!-- <p>Bootstrap</p> -->
-                <div class="img-porcentagem">
-                    <img src="img/bootstrap-256.png" alt="Logo Bootstrap">
-                    <div class="containers">
-                        <div class="primeiro-container">
-                            <div class="segundo-container" style="width:55%">55%</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- fim da seção Boostrap -->
-
-                <!-- <p>Python</p> -->
-                <div class="img-porcentagem">
-                    <img src="img/logo-python-256.png" alt="Logo Python">
-                    <div class="containers">
-                        <div class="primeiro-container">
-                            <div class="segundo-container" style="width:15%">15%</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- fim da seção em python -->
-
-                <!-- PHP -->
-                <div class="img-porcentagem">
-                    <img src="" alt="Logo PHP">
-                    <div class="containers">
-                        <div class="primeiro-container">
-                            <div class="segundo-container" style="width:15%">15%</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- fim da proxima habilidade -->
-
-            </aside>
-
+            <!--Services-->
             <div class="services">
                 <h3>O que posso fazer por você</h3>
                 <article class="service__card">
@@ -292,8 +222,28 @@
                         intuitivas e design visual atraente.</p>
                 </article>
 
-            </div>
+            </div><!--End services-->
 
+            <!-- Carousel -->
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide"> <!--1st image-->
+                        <img src="img/skills/logo-html-5-256.png" width="50" height="50" alt=""/>
+                    </div> <!--End first image-->
+
+                    <!--2nd Image  -->
+                    <div class="slide">
+                        <img src="img/skills/logo-css-3-256.png" alt="" width="50" height="50"/>
+                    </div><!--End second image-->
+
+                    <!-- 3rd image -->
+                    <div class="slide">
+                        <img src="img/skills/php.svg" alt="" width="50" height="50"/>
+                    </div> <!--End 3rd image-->
+
+                   
+                </div> <!--End slide-track-->
+            </div> <!--End slider-->
 
         </section><!--Fim da seção sobre-->
 
