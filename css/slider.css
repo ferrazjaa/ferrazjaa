@@ -7,27 +7,28 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-100px * 6)); /* número baseado nos slides*/
   }
 }
 
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  height: 80px;
   margin: auto;
+  margin-top: 3rem;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  max-width: calc(320px - 12%); /*tamanho da tela menos o padding*/
 }
 
 .slider::before,
 .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 100px;
+  height: 80px;
   position: absolute;
-  width: 200px;
+  width: 40px; /* Menor largura dos gradientes para mobile */
   z-index: 2;
 }
 .slider::after {
@@ -41,19 +42,63 @@
 }
 
 .slide-track {
-  animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
+  animation: scroll 20s linear infinite; /* Duração reduzida para mobile */
+  display: flex; 
+  width: calc(100px * 12); /* Ajuste baseado no número de slides e suas larguras */
 }
 
 .slide {
-  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   width: 100px;
 }
 
-/* @media screen and (min-width:0){
-    .slider{
-        width: calc(320px - 12%);
-    }
-    
-} */
+.slide img {
+  width: 40%; /* Ajuste para manter a imagem proporcional */
+  height: auto;
+}
+
+/* Estilos para tablets e dispositivos maiores */
+@media screen and (min-width: 600px) {
+  .slider {
+    height: 100px;
+    max-width: 480px;
+  }
+
+  .slider::before,
+  .slider::after {
+    height: 100px;
+    width: 80px;
+  }
+
+  .slide-track {
+    animation: scroll 30s linear infinite; /* Animação mais lenta para telas maiores */
+    width: calc(150px * 12);
+  }
+
+  .slide {
+    width: 150px;
+  }
+}
+
+/* Estilos para desktops e dispositivos ainda maiores */
+@media screen and (min-width: 960px) {
+  .slider {
+    max-width: calc(960px - 12%);
+  }
+
+  .slider::before,
+  .slider::after {
+    width: 100px;
+  }
+
+  .slide-track {
+    width: calc(200px * 12);
+  }
+
+  .slide {
+    width: 200px;
+  }
+}
+
