@@ -14,7 +14,7 @@
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 80px;
+  height: 40px;
   margin: auto;
   margin-top: 3rem;
   overflow: hidden;
@@ -26,7 +26,7 @@
 .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 80px;
+  height: 40px;
   position: absolute;
   width: 40px; /* Menor largura dos gradientes para mobile */
   z-index: 2;

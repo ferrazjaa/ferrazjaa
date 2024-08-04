@@ -19,6 +19,11 @@
 
 .home__photo--photo{
     width: 50%;
+    transition: 1s cubic-bezier(.24,1.49,.45,-0.22);
+}
+
+.home__photo--photo:hover{
+    transform: rotate3d(1, 1, 1, 4deg)
 }
 
 .nome{
