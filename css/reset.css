@@ -12,31 +12,11 @@
 
 }
 
-:root{
-    --cor-azul-escuro: #0728319f;
-    --cor-rosa:#c96567;
-    font-size: 62.5%;
-    --gradiente: linear-gradient(to bottom right, #c96567, #0728319f);
-}
-
-/* html {
-    background-image: var(--gradiente);
-} */
-
 body{
-    /* color: #ffff; */
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    
+    -webkit-font-smoothing: antialiased;   
 }
 
-a{
-    cursor: pointer;
-    text-decoration: none;
-}
 
 /*
   Avoid text overflows
@@ -45,32 +25,7 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-section{
-    padding: 0 6%;
-}
 
 
-/* SCROLLBAR-----------------------------------  */
 
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-/* Barra*/
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-/* Barra de Rolagem*/
-::-webkit-scrollbar-thumb {
-    background-image: var(--gradiente);
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #233057;
-    cursor: pointer;
-}
 

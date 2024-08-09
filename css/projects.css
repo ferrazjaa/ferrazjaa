@@ -1,160 +1,105 @@
 /* CSS PROJETOS */
 
 /* Estilo de cada projeto */
-.projeto{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 8%;
-    border-radius: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.project {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 8%;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* tamanho que alocará o codepen */
-.code-pen{
-    width: 85%;
-    max-width: 30rem;
-    margin-bottom: 5%;
-   
+.code-pen {
+  width: 85%;
+  max-width: 30rem;
+  margin-bottom: 5%;
 }
-
-/* título dos projetos */
-main h2{
-    text-align: center;
-    margin-bottom: 5%;
-    font-weight: 500;
-    font-size: 1.3em;
-    color:#000000;
-    padding-top: 5%;
-    
-    
-}
-
 
 /* EXPLICAÇÃO PROJETO */
-.paragrafo-explicacao{
-    width: 85%;
-    text-align: justify;
-    font-size: 0.80em;
-    /* margin: 1em 0 1em 3em;  */
-    text-indent: 1em;
-    line-height: 1.2;
-    font-weight: 400;
-    margin-bottom: 5%;
-    /* color: #003B4A; */
-
+.project__paragraph {
+  width: 85%;
+  text-align: justify;
+  font-size: 0.8em;
+  /* margin: 1em 0 1em 3em;  */
+  text-indent: 1em;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 5%;
+  /* color: #003B4A; */
 }
 
 /* ICONES PAGES E REPOSITÓRIO */
-.icones{
-    font-size: 1.3rem;
-    text-shadow: 2px 2px 5px black;
+.icones {
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 5px black;
 }
 
-.link-github{
+.link-github {
+  display: flex;
+  flex-direction: row;
+}
+
+.paragrafo-explicacao a {
+  margin-left: 10%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.paragrafo-explicacao a img {
+  width: 30%;
+  margin-bottom: 2%;
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+  .projetos {
     display: flex;
-    flex-direction: row;
-}
+    width: 90%;
+    margin: auto;
+  }
+  .projetos > div {
+    margin: 15px;
+    padding: 20px;
+  }
 
-
-.paragrafo-explicacao a{
-    margin-left: 10%;
+  .code-pen {
+    width: 90%;
+    max-width: 40rem;
+  }
+  .paragrafo-explicacao a {
+    margin-left: 5%;
     cursor: pointer;
-    text-decoration: none;
-}
-
-.paragrafo-explicacao a img{
-    width: 30%;
-    margin-bottom: 2%;
-}
-
-
-
-/* LOADER */
-.loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #21414A;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
-  }
-  
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
   }
 
-@media (min-width: 768px){
-    main h2{
-        font-size: 2.3em;
-    }
+  .paragrafo-explicacao a img {
+    width: 50%;
+  }
 
-    .paragrafo-explicacao{
-        font-size: 1.3em;
-    }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 15%;
+    background-color: #233057;
+    color: #fffff6;
+    font-size: 0.83em;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1% 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 }
 
-@media(min-width:1024px){
-    .projetos{
-        display: flex;
-        width: 90%;
-        margin: auto;
-
-    }
-    .projetos > div{
-        margin: 15px;
-        padding: 20px;
-    }
-
-    .code-pen{
-    
-        width: 90%;
-        max-width: 40rem;
-
-    }
-    .paragrafo-explicacao a{
-        margin-left: 5%;
-        cursor: pointer;
-    }
-    
-    .paragrafo-explicacao a img{
-        width: 50%;
-    }
-
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 15%;
-        background-color:#233057 ;
-        color: #FFFFF6;
-        font-size: 0.83em;
-        text-align: center;
-        border-radius: 6px;
-        padding: 1% 0;
-      
-        /* Position the tooltip */
-        position: absolute;
-        z-index: 1;
-      }
-      
-      .tooltip:hover .tooltiptext {
-        visibility: visible;
-      }
-
-
-}
-
-@media(min-width:1440px){
-     main h2{
-        font-size: 3em;
-    }
-}
+/* **************MEDIAS QUERIES *************************************************************** */

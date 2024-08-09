@@ -32,6 +32,7 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/home.css">
@@ -266,11 +267,11 @@
         </section><!--Fim da seção sobre-->
 
         <!--Section projects-->
-        <section id="projects">
+        <section id="projects" class="projects">
             <h2 class="title">Projetos</h2>
 
             <!-- POMODORO -------------------------------------------------------------------------------------------------->
-            <article class="projeto">
+            <article class="project">
                 <h2>Pomodoro</h2>
                 <!-- codepen -->
                 <div class="code-pen">
@@ -281,12 +282,11 @@
                             on <a href="https://codepen.io">CodePen</a>.</span>
                     </p>
                     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
                 </div>
                 <!-- fim da estrutura do codepen -->
 
                 <!-- texto de explicação -->
-                <div class="paragrafo-explicacao">
+                <div class="project__paragraph">
                     <p>Página de temporizador inspirada no método Pomodoro, que segue o ciclo tradicional de 25 minutos
                         de foco intenso em trabalho, seguidos por 5 minutos de intervalo. Para atender às preferências
                         individuais dos usuários, também é possível personalizar o tempo de foco no trabalho.
@@ -325,81 +325,190 @@
             </article>
             <!-- Fim do projeto pomodoro -->
 
+            <!-- Página Inicial Agencia de viagens -->
+            <article class="project">
+                <h2>Viajar é Preciso</h2>
+                <!-- codepen -->
+                <div class="code-pen">
+                    <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result"
+                        data-slug-hash="abPQywb" data-user="ferrazjaa"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/abPQywb">
+                                Viajar é preciso</a> by Jessica Ferraz (<a
+                                href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </div>
+
+                <!-- texto de explicação -->
+                <div class="project__paragraph">
+                    <p>Este projeto consiste em uma página inicial para uma agência de viagens fictícia, desenvolvida
+                        com o uso do Bootstrap 5. Destacam-se três principais recursos: um modal de "Fale Conosco" com
+                        efeito fade para facilitar o contato com a agência, um tema Dark Mode que permite aos usuários
+                        escolher entre os modos claro e escuro para uma experiência visual personalizada, e um carrossel
+                        automático que exibe destinos de viagem de forma atrativa.
+                        <br>Principais tecnologias utilizadas:<i class="fa-brands fa-square-js icones"
+                            title="JavaScript" style="color:#EFD81D; font-size:1.3rem;"></i><i
+                            class="fa-brands fa-bootstrap icones" title="Bootstrap"
+                            style="color:#7511F6; font-size:1.3rem;"></i>
+                    </p>
+                    <p>Disponível também:</p>
+                    <div class="link-github">
+
+                        <!-- pages -->
+                        <a href="https://ferrazjaa.github.io/viajar-Preciso/" target="_blank" rel="noopener noreferrer">
+                            <div class="tooltip">
+                                <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
+                                <span class="tooltiptext">GitHub Pages</span>
+                            </div>
+                        </a>
+
+                        <!-- repositório -->
+                        <a href="https://github.com/ferrazjaa/viajar-Preciso" target="_blank" rel="noopener noreferrer">
+                            <div class="tooltip">
+                                <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
+                                <span class="tooltiptext">Repositório</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </article>
+            <!-- fim da viajar é preciso -->
+
+            <!-- CARDÁPIO ---------------------------------------------------------------------------------------------- -->
+            <article class="projeto">
+                <h2>Cardápio</h2>
+                <!-- bloco com codepen -->
+                <div class="code-pen">
+                    <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="GRPGdxL"
+                        data-user="ferrazjaa">
+                        <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/GRPGdxL">
+                                Cardápio</a> by Jessica Ferraz (<a href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                </div>
+
+                <!-- paragrafo de explicação -->
+                <div class="paragrafo-explicacao">
+                    <p>O projeto de cardápio de uma cafeteria criado com HTML5 e CSS3 para proporcionar uma experiência
+                        visualmente atraente e informativa aos clientes. Na página, você encontrará seções dedicadas aos
+                        diferentes tipos de cafés, salgados e sobremesas disponíveis.
+                        <br>Tecnologias utilizadas: <i class="fa-brands fa-html5 icones" title="HMTL5"
+                            style="color:#DF4C26;"></i><i class="fa-brands fa-css3-alt icones" title="CSS3"
+                            style="color: #254BDD;font-size: 1.3rem;"></i>
+                    </p>
+                    <p>Disponível também:</p>
+                    <div class="link-github">
+                        <!-- pages -->
+                        <a href="https://ferrazjaa.github.io/cardapio-cafeteria/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="tooltip">
+                                <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
+                                <span class="tooltiptext">Github Pages</span>
+                            </div>
+                        </a>
+
+                        <!-- repositório -->
+                        <a href="https://github.com/ferrazjaa/cardapio-cafeteria" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="tooltip">
+                                <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
+
+                                <span class="tooltiptext">Repositório</span>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+            </article>
+            <!-- FIM DE CARDÁPIO -->
+
+
+
         </section><!--End section projects-->
 
         <!--Section Contact-->
         <section id="contact">
             <h2 class="title">Contato</h2>
-    
-
-        <address>
-            
-        </address>
-
-        <p>Se há dúvidas, sugestões ou qualquer outro tipo de informação, preencha os campos a seguir, que entrarei em
-            contato em breve.</p>
 
 
-        <!-- Usei o site https://formsubmit.co/ -->
+            <address>
 
-        <form action="https://formsubmit.co/ferrazjaa@gmail.com" method="POST" autocomplete="off">
+            </address>
 
-            <fieldset>
-
-                <!-- CAMPO NOME -->
-
-                <label for="nome">Nome(*)</label><br>
-                <input type="text" name="nome" id="nome" required autofocus placeholder="Nome">
-                <br>
+            <p>Se há dúvidas, sugestões ou qualquer outro tipo de informação, preencha os campos a seguir, que entrarei
+                em
+                contato em breve.</p>
 
 
-                <!-- CAMPO EMAIL -->
+            <!-- Usei o site https://formsubmit.co/ -->
 
-                <label for="address-email">e-mail(*)</label> <br>
-                <input type="email" name="address-email" id="address-email" placeholder="email@exemplo.com" required
-                    autofocus>
+            <form action="https://formsubmit.co/ferrazjaa@gmail.com" method="POST" autocomplete="off">
 
-                <br>
+                <fieldset>
 
+                    <!-- CAMPO NOME -->
 
-                <!-- Campo TELEFONE -->
-                <label for="telefone">Telefone</label>
-                <br>
-                <div class="campo-telefone">
-                    <input type="number" name="number" id="prefixo-internacional" min="1" max="998" value="55">
-                    <input type="tel" name="telefone" id="telefone" placeholder="(__)_________">
-                </div>
-
-                <br>
-
-                <!-- CAMPO ASSUNTO -->
-
-                <label for="assunto">Assunto(*)</label>
-                <br>
-                <input type="text" name="assunto" id="assunto" placeholder="Digite aqui" required autofocus>
-                <br>
+                    <label for="nome">Nome(*)</label><br>
+                    <input type="text" name="nome" id="nome" required autofocus placeholder="Nome">
+                    <br>
 
 
-                <!-- CAMPO MENSAGEM-->
-                <label for="mensagem">Mensagem(*)</label>
-                <br>
-                <textarea name="mesagem" id="mensagem" cols="30" rows="10" placeholder="Deixe sua mensagem!"
-                    spellcheck="true"></textarea> <br>
+                    <!-- CAMPO EMAIL -->
 
-                <!-- submit -->
-                <button type="submit"> ENVIAR <i class="fa-regular fa-paper-plane"></i>
-                </button>
+                    <label for="address-email">e-mail(*)</label> <br>
+                    <input type="email" name="address-email" id="address-email" placeholder="email@exemplo.com" required
+                        autofocus>
+
+                    <br>
 
 
-                <!-- CAMPO DE AGRADECIMENTO  -->
-                <input type="hidden" name="_next" value="https://ferrazjaa.github.io/thanks.html">
+                    <!-- Campo TELEFONE -->
+                    <label for="telefone">Telefone</label>
+                    <br>
+                    <div class="campo-telefone">
+                        <input type="number" name="number" id="prefixo-internacional" min="1" max="998" value="55">
+                        <input type="tel" name="telefone" id="telefone" placeholder="(__)_________">
+                    </div>
+
+                    <br>
+
+                    <!-- CAMPO ASSUNTO -->
+
+                    <label for="assunto">Assunto(*)</label>
+                    <br>
+                    <input type="text" name="assunto" id="assunto" placeholder="Digite aqui" required autofocus>
+                    <br>
+
+
+                    <!-- CAMPO MENSAGEM-->
+                    <label for="mensagem">Mensagem(*)</label>
+                    <br>
+                    <textarea name="mesagem" id="mensagem" cols="30" rows="10" placeholder="Deixe sua mensagem!"
+                        spellcheck="true"></textarea> <br>
+
+                    <!-- submit -->
+                    <button type="submit"> ENVIAR <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+
+
+                    <!-- CAMPO DE AGRADECIMENTO  -->
+                    <input type="hidden" name="_next" value="https://ferrazjaa.github.io/thanks.html">
 
 
 
-            </fieldset>
+                </fieldset>
 
 
-        </form>
+            </form>
         </section> <!--End section contact-->
 
 
@@ -412,7 +521,7 @@
 
 
 
-<!--  RODAPE -------------------------------------------------------------------------------- -->
+    <!--  RODAPE -------------------------------------------------------------------------------- -->
     <footer>
         <h2>Referências</h2>
         <ul>
