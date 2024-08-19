@@ -1,13 +1,5 @@
-/* 
-OQUE PODE IR PARA BASE
-ver title que é h2
-subtittle que é h3
-margin-top da seção about
-
-POSSO TENTAR COLOCAR UM FLEX DE 33.33% E UM PADDING QUE TENHA OS CARDS
-*/
-
-.title, .subtitle {
+.title,
+.subtitle {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
@@ -21,47 +13,58 @@ POSSO TENTAR COLOCAR UM FLEX DE 33.33% E UM PADDING QUE TENHA OS CARDS
   text-align: center;
 }
 .about__address a {
-  margin-left: auto; 
+  margin-left: auto;
 }
 
-
-/* CARDS SERVICES *********************************** */
-.services{
+/* ************************************************************* */
+/* CSS para todos os tamanhos de tela */
+.services {
+  width: 90%; /* Ajusta a largura do container */
+  margin: 0 auto; /* Centraliza o container */
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction: column;
 }
-.service__card{
+
+.service__card {
   background-color: rgb(153, 192, 152);
   border-radius: 2rem;
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2); 
-  /* box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
   display: grid;
-  grid-template-areas: 
-  ' title'
-  'description'
-  ;
-  grid-template-rows: .5fr 1fr;
-  margin: 0 auto;
+  grid-template-areas:
+    "title"
+    "description";
+  grid-template-rows: 0.5fr 1fr;
+  height: 50px;
   overflow: hidden;
   place-items: center;
   position: relative;
+  transition: height 0.4s ease-out;
+  z-index: 1;
 }
 
-.service__title{
+.service__title {
   grid-area: title;
   text-align: center;
 }
 
-.service__description{
+.service__description {
   grid-area: description;
+  opacity: 0; /* Esconde a descrição inicialmente */
+  transition: opacity 0.4s ease-out;
+  
 }
 
+.service__card:hover {
+  height: 200px; /* Expande o cartão ao passar o mouse */
+  z-index: 10; /* Garante que o cartão fique acima dos outros */
+}
 
-/* MEDIAS QUERIES ****************** */
-@media screen and (min-width:0){
+.service__card:hover .service__description {
+  opacity: 1; /* Mostra a descrição ao passar o mouse */
+}
 
-  /* usado no h2 do about */
+/* MEDIAS QUERIES ************************************************************************** */
+@media screen and (min-width: 0) {
   .title {
     font-size: 2rem;
     margin-bottom: 0.1rem;
@@ -82,13 +85,7 @@ POSSO TENTAR COLOCAR UM FLEX DE 33.33% E UM PADDING QUE TENHA OS CARDS
     font-size: 1.6rem;
     margin: 1.6rem auto;
   }
-
-  .service__card{
-    height: 22rem;
-    padding: 1.6rem;
-    width: 70%;
-  }
-
+  /* services card *********************************** */
   .service__title{
     font-size: 1.4rem;
   }
@@ -97,16 +94,26 @@ POSSO TENTAR COLOCAR UM FLEX DE 33.33% E UM PADDING QUE TENHA OS CARDS
     font-size: 1.4rem;
     text-align: justify;
     text-indent: 1.4rem;
+    padding: 0 10px; /* Espaçamento interno */
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .about__container{
+    display: flex;
   }
 
-
-}
-@media screen and (min-width:768px){
+  .about__information{
+    width: 75%;
+  }
   .service__card{
-    width: calc(40% - 12%);
-  }
+    margin: 0 auto;
+    width: 70%;
+  } 
 }
-@media screen and (min-width:1024px){
+
+@media screen and (min-width: 1024px) {
   .about {
     margin-top: 5rem;
   }
@@ -132,21 +139,12 @@ POSSO TENTAR COLOCAR UM FLEX DE 33.33% E UM PADDING QUE TENHA OS CARDS
     margin: 1.8rem auto;
   }
 
-  .service__card{
-    /* flex: 1 0 33.33%; */
-    height: 18rem; 
-  /* justify-content: space-between; */
-    margin: 0 auto;
-    padding: 1.6rem;
+  /* SERVICES *************************************** */
+  .service__title {
+    font-size: 1.6rem; /* Mais ajustes para telas ainda maiores */
   }
 
-  .service__title{
-    font-size: 1.6rem;
+  .service__description {
+    font-size: 1.4rem; /* Ajuste final para a descrição */
   }
-
-  .service__description{
-    font-size: 1.5rem;
-    text-indent: 1.5rem;
-  }
-  
 }
