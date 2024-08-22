@@ -33,9 +33,10 @@
   grid-template-areas:
     "title"
     "description";
-  grid-template-rows: 0.5fr 1fr;
-  height: 50px;
+  /* grid-template-rows: 0.5fr 1fr; */
+  height: 5rem;
   overflow: hidden;
+  padding: 1rem;
   place-items: center;
   position: relative;
   transition: height 0.4s ease-out;
@@ -55,7 +56,7 @@
 }
 
 .service__card:hover {
-  height: 200px; /* Expande o cartão ao passar o mouse */
+  height: 12rem; /* Expande o cartão ao passar o mouse */
   z-index: 10; /* Garante que o cartão fique acima dos outros */
 }
 
@@ -88,13 +89,14 @@
   /* services card *********************************** */
   .service__title{
     font-size: 1.4rem;
+    /* margin-top: 1rem; */
   }
 
   .service__description{
     font-size: 1.4rem;
+    padding: 0.5rem 1rem; /* Espaçamento interno */
     text-align: justify;
     text-indent: 1.4rem;
-    padding: 0 10px; /* Espaçamento interno */
   }
 }
 

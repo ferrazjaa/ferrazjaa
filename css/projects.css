@@ -1,5 +1,49 @@
 /* CSS PROJETOS */
 
+.projects__carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.projects__carousel--inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.projects__carousel--item{
+  min-width: fit-content;
+  padding: 2rem;
+  text-align: center;
+  /* background-color: var(--cor-azul); */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  margin: 1.5rem;
+  border-radius: 0.8rem;
+  /* color: var(--cor-branca); */
+  /* box-shadow: 1px 1px 5px 2px black; */
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent; 
+  font-size: 3rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
 /* Estilo de cada projeto */
 .project {
   width: 90%;
@@ -9,7 +53,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 /* tamanho que alocará o codepen */
@@ -23,9 +67,9 @@
 .project__paragraph {
   width: 85%;
   text-align: justify;
-  font-size: 0.8em;
+  font-size: 1.2rem;
   /* margin: 1em 0 1em 3em;  */
-  text-indent: 1em;
+  text-indent: 1rem;
   line-height: 1.2;
   font-weight: 400;
   margin-bottom: 5%;
@@ -34,7 +78,7 @@
 
 /* ICONES PAGES E REPOSITÓRIO */
 .icones {
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-shadow: 2px 2px 5px black;
 }
 
@@ -43,51 +87,26 @@
   flex-direction: row;
 }
 
-.paragrafo-explicacao a {
+.project__paragraph a {
   margin-left: 10%;
   cursor: pointer;
   text-decoration: none;
 }
 
-.paragrafo-explicacao a img {
+.project__paragraph a img {
   width: 30%;
   margin-bottom: 2%;
 }
 
-
-
-
-
 @media (min-width: 1024px) {
-  .projetos {
-    display: flex;
-    width: 90%;
-    margin: auto;
-  }
-  .projetos > div {
-    margin: 15px;
-    padding: 20px;
-  }
 
-  .code-pen {
-    width: 90%;
-    max-width: 40rem;
-  }
-  .paragrafo-explicacao a {
-    margin-left: 5%;
-    cursor: pointer;
-  }
-
-  .paragrafo-explicacao a img {
-    width: 50%;
-  }
 
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 15%;
     background-color: #233057;
     color: #fffff6;
-    font-size: 0.83em;
+    font-size: 1rem;
     text-align: center;
     border-radius: 6px;
     padding: 1% 0;
