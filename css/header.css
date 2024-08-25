@@ -1,13 +1,14 @@
 header{
-    background-color: var(--cor-azul-escuro);
+    background-color: var(--color-blue);
     display: flex;
     justify-content: space-between;
     height: 100%;
+    padding: 2rem 3rem;
     width: 100%;
 }
 
 .logo{
-    color: #fff;
+    color: var(--color-white);
     font-family: 'Hurricane', cursive;
     font-weight: 400;
     text-align: center;
@@ -27,18 +28,18 @@ header{
 }
 
 .menu__link{
-    color: #fff;
+    color: var(--color-white); 
 }
 
 .dropdown__conteudo{
-    background-color: black;
+    background-color: var(--color-blue);
     display: none;
     position: absolute;
     width: auto; 
     z-index: 1;
 }
 .dropdown__conteudo a{
-    color: #fff;
+    color: var(--color-white);
     display: block;
     margin-bottom: .7rem;
     text-align: left;
@@ -46,6 +47,7 @@ header{
 
 .dropdown:hover .dropdown__conteudo{
     display: block;
+    
 }
 
 .menu__link:hover, .atual{

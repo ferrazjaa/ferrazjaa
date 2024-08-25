@@ -1,5 +1,5 @@
 .greetings{
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -11,7 +11,7 @@
 .greetings__item{
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     opacity: 0;
     transform: translateX(-20px);
 }
@@ -28,6 +28,8 @@
     animation-name: entrada-frase3;
     animation-delay: 1.5s;
 }
+
+
 
 @keyframes entrada-frase1 {
     to {
@@ -49,6 +51,8 @@
         transform: translateX(0);
     }
 }
+
+
 
 .highlight--rosa{
     color: #ff79c6;

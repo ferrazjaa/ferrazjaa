@@ -1,7 +1,11 @@
 /* Estilização de elementos comunus em toda a página */
 :root{
-    --cor-azul-escuro: #0728319f;
-    --cor-rosa:#c96567;
+    --color-blue:#072831;
+    --color-dark-blue: #0728319f;
+    --color-soft-blue: #66a3d2;
+    --color-dark-gray: #333;
+    --color-dark-pink:#c96567;
+    --color-white: #fff;
     font-size: 62.5%;
     --gradiente: linear-gradient(to bottom right, #c96567, #0728319f);
 }
@@ -11,13 +15,15 @@
 }  */
 
 body{
-    /* color: #ffff; */
+    background: var(--gradiente);
+    color: var(--color-dark-gray);
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 a{
+    color: var(--color-dark-gray);
     cursor: pointer;
     text-decoration: none;
 }

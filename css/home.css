@@ -9,6 +9,7 @@
 .home__details{
     grid-area: details; 
     text-align: center;
+    
 }
 
 .home__photo{
@@ -32,10 +33,10 @@
 
 /* Estilização do currículo */
 .home__curriculum{
-    background-color: #233057;
+    background-color: var(--color-dark-blue);;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     border-radius: 3% 15%;
-    color: #FFFFF6;
+    color: var(--color-white);
     font-weight: 500;
     grid-area: curriculum;
 }
@@ -58,7 +59,7 @@
         'photo'
         'curriculum'
     ;
-    height: 100vh;
+    height: calc(100vh - 2rem);
     justify-items: center;
     }
     .greetings, .home__titulo, .home__photo, .home__curriculum{
@@ -66,7 +67,7 @@
     }
 
     .home__titulo{
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
     .home__description, .home__curriculum{ 
@@ -75,6 +76,7 @@
 
     .home__curriculum{
         padding: 1rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -91,12 +93,17 @@
     margin-top: 5rem;
     }
     
-    .greetings, .home__titulo, .home__photo{
+    /* .greetings, .home__titulo, .home__photo{
         margin-top: 0rem;
-    }
+    } */
 
     .home__photo{
         justify-content: end;
+    }
+
+    .home__curriculum{
+        padding: 2rem;
+        font-size: 2.3rem;
     }
 }
 
