@@ -6,6 +6,12 @@
     --color-dark-gray: #333;
     --color-dark-pink:#c96567;
     --color-white: #fff;
+    --color-blue-usa: #1A1361;
+    --color-fern-green: #005E10;
+    --color-bright-white: rgb(241,242,241);
+    --color-flame-scarlet: #D90023;
+    --color-yellow: #f9ff00;
+
     font-size: 62.5%;
     --gradiente: linear-gradient(to bottom right, #c96567, #0728319f);
 }
@@ -16,14 +22,13 @@
 
 body{
     background: var(--gradiente);
-    color: var(--color-dark-gray);
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 a{
-    color: var(--color-dark-gray);
+    color: #080808db;
     cursor: pointer;
     text-decoration: none;
 }

@@ -1,11 +1,13 @@
 .greetings{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
+
 
 .greetings__lista{
     list-style-type: none;
 } 
+
 
 /* ANIMAÇÃO DE ENTRADA DAS PALAVRAS */
 .greetings__item{
@@ -54,25 +56,30 @@
 
 
 
-.highlight--rosa{
-    color: #ff79c6;
+.highlight{
     font-weight: 500;
 }
 
-.highlight--verde{
-    color: #50fa7b;
+.highlight--blue{
+    color: var(--color-blue-usa);
     
 }
-.highlight--azul{
-    color:#8be9fd;
-}
-.highlight--roxo{
-    color: #bd93f9;
+.highlight--green{
+    color: var(--color-fern-green);
 }
 
-.highlight--amarelo{
-    color: #F1FA8C;
+.highlight--red{
+    color: var(--color-flame-scarlet);
 }
+
+.highlight--white{
+    color: var(--color-bright-white);
+}
+
+.highlight--yellow{
+    color: var(--color-yellow);
+}
+
 
 
 
@@ -87,14 +94,6 @@
 }
 @media screen and (min-width: 1024px) {
     .greetings{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-
-    /* #english{
-        text-indent: 5rem;
-    }
-    
-    #italiano{
-        text-indent: 10rem;
-    } */
 }
