@@ -80,7 +80,7 @@
       "details"
       "photo"
       "curriculum";
-    height: 100vh;
+    height: calc(100vh - 2rem);
     justify-items: center;
   }
   .greetings,
@@ -126,6 +126,7 @@
       "greet details"
       "greet curriculum";
     margin-top: 5rem;
+    height: 100vh;
   }
 
   /* .greetings, .home__titulo, .home__photo{
