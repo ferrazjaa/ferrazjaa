@@ -31,22 +31,10 @@
   transform: rotate3d(1, 1, 1, 4deg);
 }
 
-/* animações foto e nome **************************** */
-@keyframes slideFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .home__details,
 .home__photo {
   animation: slideFromLeft 1s ease-out;
-  animation-delay: 1.7s; /* Começa a animação após 1.5 segundos */
+  animation-delay: 2s; /* Começa a animação após 2 segundos */
   animation-fill-mode: both; /* Garante que o elemento permaneça no estado final após a animação */
 }
 
@@ -65,7 +53,7 @@
   /* animação de entrada */
   opacity: 0;
   transform: translateY(-100%);
-  animation: slideInDown 1s ease-out 2.5s forwards; /* 1s após o término da animação anterior */
+  animation: slideInDown 1s ease-out 3s forwards; /* 1s após o término da animação anterior */
 }
 
 @keyframes slideInDown {
@@ -115,6 +103,18 @@
     padding: 1rem;
     font-size: 1.6rem;
   }
+
+  /* animações foto e nome **************************** */
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -134,6 +134,18 @@
 
   .home__photo {
     justify-content: end;
+  }
+
+  /* animações foto e nome **************************** */
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   .home__curriculum {

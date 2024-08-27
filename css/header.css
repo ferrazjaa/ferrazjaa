@@ -34,6 +34,7 @@ header{
 .dropdown__conteudo{
     background-color: var(--color-blue);
     display: none;
+    padding: .5rem;
     position: absolute;
     width: auto; 
     z-index: 1;

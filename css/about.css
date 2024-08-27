@@ -1,3 +1,6 @@
+.about{
+  height: 100vh;
+}
 .title,
 .subtitle {
   font-weight: 500;
@@ -17,18 +20,17 @@
 }
 
 /* ************************************************************* */
-/* CSS para todos os tamanhos de tela */
 .services {
-  width: 90%; /* Ajusta a largura do container */
-  margin: 0 auto; /* Centraliza o container */
   display: flex;
   flex-direction: column;
+  margin: 0 auto; /* Centraliza o container */
+  width: 90%; /* Ajusta a largura do container */
 }
 
 .service__card {
-  background-color: rgb(153, 192, 152);
-  border-radius: 2rem;
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  /* background-color: rgb(153, 192, 152); */
+  border-radius: 3%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   display: grid;
   grid-template-areas:
     "title"
@@ -56,6 +58,7 @@
 }
 
 .service__card:hover {
+  border: 1px solid;
   height: 12rem; /* Expande o cartão ao passar o mouse */
   z-index: 10; /* Garante que o cartão fique acima dos outros */
 }
