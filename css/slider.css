@@ -12,14 +12,16 @@
 }
 
 .slider {
+  align-items: center;
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 40px;
+  display: flex;
+  height: 100px;
   margin: auto;
   margin-top: 3rem;
+  max-width: calc(320px - 12%); /*tamanho da tela menos o padding*/
   overflow: hidden;
   position: relative;
-  max-width: calc(320px - 12%); /*tamanho da tela menos o padding*/
 }
 
 .slider::before,
