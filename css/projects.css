@@ -1,5 +1,6 @@
 /* CSS PROJETOS */
 
+/* SLIDES */
 .projects__carousel {
   position: relative;
   width: 100%;
@@ -19,8 +20,6 @@
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   margin: 1.5rem;
   border-radius: 0.8rem;
-  /* color: var(--cor-branca); */
-  /* box-shadow: 1px 1px 5px 2px black; */
 }
 
 .carousel-control {
