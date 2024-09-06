@@ -177,7 +177,8 @@
 
                   <!-- redes sociais -->
                   <address class="about__address">
-                     <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer">
+                     <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer"
+                        class="social__media--link">
                         <i class="fa-brands fa-github"></i>
                      </a>
                      <!-- linkedin -->
@@ -284,11 +285,13 @@
             <div class="projects__carousel--inner">
 
                <!-- POMODORO ---------------------------------------------------------->
-               <article class="project projects__carousel--item">
-                  <h2>Pomodoro</h2>
+               <article class="projects__carousel--item">
+                  <!-- project title ---------------- -->
+                  <h3 class="subtitle">Pomodoro</h3>
                   <!-- codepen -->
                   <div class="code-pen">
-                     <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="VwqdxNg"
+                     <p class="codepen" 
+                     data-height="500" data-default-tab="result" data-slug-hash="VwqdxNg"
                         data-user="ferrazjaa">
                         <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/VwqdxNg">
                               Pomodoro</a> by Jessica Ferraz (<a href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
@@ -298,161 +301,63 @@
                   </div>
                   <!-- fim da estrutura do codepen -->
 
-                  <!-- texto de explicação -->
-                  <div class="project__paragraph">
-                     <p>Página de temporizador inspirada no método Pomodoro, que segue o ciclo tradicional de 25
-                        minutos
-                        de foco intenso em trabalho, seguidos por 5 minutos de intervalo. Para atender às
-                        preferências
-                        individuais dos usuários, também é possível personalizar o tempo de foco no trabalho.
-                        <br>Tecnologias utilizadas:<i class="fa-brands fa-html5 icones" title="HMTL5"
-                           style="color:#DF4C26;"></i><i class="fa-brands fa-css3-alt icones" title="CSS3"
-                           style="color: #254BDD;font-size: 1.3rem;"></i><i class="fa-brands fa-square-js icones"
-                           title="JavaScript" style="color:#EFD81D; font-size:1.3rem;"></i>
+                  <!-- button modal -->
+                  <div class="project__wrapper">
+                     <a href="#project--modal"><i class="fa-solid fa-plus"></i></a>
+                  </div><!-- end button modal -->
 
-                     </p>
-                     <p>Disponível também:</p>
-                     <!-- links para o github -->
-                     <div class="link-github">
+                  <!-- modal structure -->
+                  <div id="project--modal" class="project__modal">
+                     <!-- texto de explicação -->
+                     <div class="modal__content">
+                        <h4>Pomodoro</h4>
+                        <p>Página de temporizador inspirada no método Pomodoro, que segue o ciclo tradicional de 25
+                           minutos
+                           de foco intenso em trabalho, seguidos por 5 minutos de intervalo. Para atender às
+                           preferências
+                           individuais dos usuários, também é possível personalizar o tempo de foco no trabalho.
+                           <br>Tecnologias utilizadas:<i class="fa-brands fa-html5 icones" title="HMTL5"
+                              style="color:#DF4C26;"></i><i class="fa-brands fa-css3-alt icones" title="CSS3"
+                              style="color: #254BDD;font-size: 1.3rem;"></i><i class="fa-brands fa-square-js icones"
+                              title="JavaScript" style="color:#EFD81D; font-size:1.3rem;"></i>
 
-                        <!-- pages -->
-                        <a href="https://ferrazjaa.github.io/pomodoro/" target="_blank" rel="noopener noreferrer">
-                           <div class="tooltip">
-                              <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
-                              <span class="tooltiptext">GitHub Pages</span>
-                           </div>
-                        </a>
+                        </p>
 
-                        <!-- repositório -->
-                        <a href="https://github.com/ferrazjaa/pomodoro" target="_blank" rel="noopener noreferrer">
-                           <!-- tooltip -->
-                           <div class="tooltip">
-                              <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
-                              <span class="tooltiptext">Repositório</span>
-                           </div>
-                           <!-- fim tooltip -->
-                        </a>
-                     </div>
-                     <!-- fim links github -->
+                        <p>Disponível também:</p>
+                        <!-- links para o github -->
+                        <div class="link-github">
 
-                  </div>
-                  <!-- fim parafrafo explicação -->
+                           <!-- pages -->
+                           <a href="https://ferrazjaa.github.io/pomodoro/" target="_blank" rel="noopener noreferrer" class="project__paragraph--link">
+                              <div class="tooltip">
+                                 <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
+                                 <span class="tooltiptext">GitHub Pages</span>
+                              </div>
+                           </a>
+
+                           <!-- repositório -->
+                           <a href="https://github.com/ferrazjaa/pomodoro" target="_blank" rel="noopener noreferrer">
+                              <!-- tooltip -->
+                              <div class="tooltip">
+                                 <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
+                                 <span class="tooltiptext">Repositório</span>
+                              </div>
+                              <!-- fim tooltip -->
+                           </a>
+                        </div>
+                        <!-- fim links github -->
+
+                        <a href="#" class="modal__close">&times;</a>
+                     </div><!-- fim parafrafo explicação -->
+
+                     
+
+                  </div> <!--end modal structure-->
+
                </article>
                <!-- Fim do projeto pomodoro -->
 
-               <!-- Página Inicial Agencia de viagens -->
-               <article class="project projects__carousel--item">
-                  <h2>Viajar é Preciso</h2>
-                  <!-- codepen -->
-                  <div class="code-pen">
-                     <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result"
-                        data-slug-hash="abPQywb" data-user="ferrazjaa"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/abPQywb">
-                              Viajar é preciso</a> by Jessica Ferraz (<a
-                              href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
-                           on <a href="https://codepen.io">CodePen</a>.</span>
-                     </p>
-                     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                  </div>
 
-                  <!-- texto de explicação -->
-                  <div class="project__paragraph">
-                     <p>Este projeto consiste em uma página inicial para uma agência de viagens fictícia,
-                        desenvolvida
-                        com o uso do Bootstrap 5. Destacam-se três principais recursos: um modal de "Fale
-                        Conosco"
-                        com
-                        efeito fade para facilitar o contato com a agência, um tema Dark Mode que permite aos
-                        usuários
-                        escolher entre os modos claro e escuro para uma experiência visual personalizada, e um
-                        carrossel
-                        automático que exibe destinos de viagem de forma atrativa.
-                        <br>Principais tecnologias utilizadas:<i class="fa-brands fa-square-js icones"
-                           title="JavaScript" style="color:#EFD81D; font-size:1.3rem;"></i><i
-                           class="fa-brands fa-bootstrap icones" title="Bootstrap"
-                           style="color:#7511F6; font-size:1.3rem;"></i>
-                     </p>
-                     <p>Disponível também:</p>
-                     <div class="link-github">
-
-                        <!-- pages -->
-                        <a href="https://ferrazjaa.github.io/viajar-Preciso/" target="_blank" rel="noopener noreferrer">
-                           <div class="tooltip">
-                              <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
-                              <span class="tooltiptext">GitHub Pages</span>
-                           </div>
-                        </a>
-
-                        <!-- repositório -->
-                        <a href="https://github.com/ferrazjaa/viajar-Preciso" target="_blank" rel="noopener noreferrer">
-                           <div class="tooltip">
-                              <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
-                              <span class="tooltiptext">Repositório</span>
-                           </div>
-                        </a>
-                     </div>
-
-                  </div>
-
-               </article>
-               <!-- fim da viajar é preciso -->
-
-               <!-- CARDÁPIO ------------------------------------------------------- -->
-               <article class="project projects__carousel--item">
-                  <h2>Cardápio</h2>
-                  <!-- bloco com codepen -->
-                  <div class="code-pen">
-                     <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="GRPGdxL"
-                        data-user="ferrazjaa">
-                        <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/GRPGdxL">
-                              Cardápio</a> by Jessica Ferraz (<a href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
-                           on <a href="https://codepen.io">CodePen</a>.</span>
-                     </p>
-                     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-                  </div>
-
-                  <!-- paragrafo de explicação -->
-                  <div class="project__paragraph">
-                     <p>O projeto de cardápio de uma cafeteria criado com HTML5 e CSS3 para proporcionar uma
-                        experiência
-                        visualmente atraente e informativa aos clientes. Na página, você encontrará seções
-                        dedicadas
-                        aos
-                        diferentes tipos de cafés, salgados e sobremesas disponíveis.
-                        <br>Tecnologias utilizadas: <i class="fa-brands fa-html5 icones" title="HMTL5"
-                           style="color:#DF4C26;"></i><i class="fa-brands fa-css3-alt icones" title="CSS3"
-                           style="color: #254BDD;font-size: 1.3rem;"></i>
-                     </p>
-                     <p>Disponível também:</p>
-                     <div class="link-github">
-                        <!-- pages -->
-                        <a href="https://ferrazjaa.github.io/cardapio-cafeteria/" target="_blank"
-                           rel="noopener noreferrer">
-                           <div class="tooltip">
-                              <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
-                              <span class="tooltiptext">Github Pages</span>
-                           </div>
-                        </a>
-
-                        <!-- repositório -->
-                        <a href="https://github.com/ferrazjaa/cardapio-cafeteria" target="_blank"
-                           rel="noopener noreferrer">
-                           <div class="tooltip">
-                              <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
-
-                              <span class="tooltiptext">Repositório</span>
-                           </div>
-                        </a>
-                     </div>
-
-
-
-                  </div> <!--End project__paragraph-->
-
-               </article>
-               <!-- FIM DE CARDÁPIO -->
             </div><!--End carousel-inner-->
 
             <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
@@ -472,9 +377,9 @@
          </p>
 
          <address class="contact__adress">
-            <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer">
-               <i
-                  class="fa-brands fa-github">
+            <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer"
+               class="social__media--link">
+               <i class="fa-brands fa-github">
                </i>
             </a>
          </address>
@@ -570,8 +475,10 @@
                target="_blank" rel="noopener noreferrer">Icon by Freepik</a>
          </li>
 
-         <li>Scrollbar baseado em: <a href="https://codepen.io/DarthVeyda/pen/eLLbXa?editors=1100" target="_blank" rel="noopener noreferrer">CodePen Home
-            Custom scrollbar with CSS triangles</a> de <a href="https://codepen.io/DarthVeyda" target="_blank" rel="noopener noreferrer">Anastasia Gavrylenko</a>
+         <li>Scrollbar baseado em: <a href="https://codepen.io/DarthVeyda/pen/eLLbXa?editors=1100" target="_blank"
+               rel="noopener noreferrer">CodePen Home
+               Custom scrollbar with CSS triangles</a> de <a href="https://codepen.io/DarthVeyda" target="_blank"
+               rel="noopener noreferrer">Anastasia Gavrylenko</a>
          </li>
 
          <li><a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank">Libras:

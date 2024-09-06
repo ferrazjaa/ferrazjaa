@@ -56,6 +56,10 @@
   animation: slideInDown 1s ease-out 3s forwards; /* 1s após o término da animação anterior */
 }
 
+.home__curriculum:hover {
+  transform: scale(1.1);
+}
+
 @keyframes slideInDown {
   to {
     opacity: 1;
@@ -67,9 +71,7 @@
   color: var(--color-white);
 }
 
-.home__curriculum:hover {
-  transform: scale(1.1);
-}
+
 
 /* ****************************** MEDIA QUERIES*********************************************** */
 @media screen and (min-width: 0) {
@@ -100,8 +102,8 @@
   }
 
   .home__curriculum {
-    padding: 1rem;
     font-size: 1.6rem;
+    padding: 1rem;
   }
 
   /* animações foto e nome **************************** */
@@ -115,6 +117,7 @@
       opacity: 1;
     }
   }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -150,8 +153,8 @@
   }
 
   .home__curriculum {
-    padding: 2rem;
     font-size: 2.3rem;
+    padding: 2rem;
   }
 }
 

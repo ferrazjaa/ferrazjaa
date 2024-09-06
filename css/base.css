@@ -33,6 +33,14 @@ section {
   padding: 0 6%;
 }
 
+.social__media--link{
+  transition: all .7s;
+}
+
+.social__media--link:hover{
+  transform: scale(1.5);
+}
+
 /* SCROLLBAR-----------------------------------  */
 
 ::-webkit-scrollbar {

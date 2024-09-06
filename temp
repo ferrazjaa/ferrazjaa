@@ -1,0 +1,113 @@
+               <!-- Página Inicial Agencia de viagens -->
+               <article class="project projects__carousel--item">
+                  <h2>Viajar é Preciso</h2>
+                  <!-- codepen -->
+                  <div class="code-pen">
+                     <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result"
+                        data-slug-hash="abPQywb" data-user="ferrazjaa"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/abPQywb">
+                              Viajar é preciso</a> by Jessica Ferraz (<a
+                              href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
+                           on <a href="https://codepen.io">CodePen</a>.</span>
+                     </p>
+                     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+
+                  <!-- texto de explicação -->
+                  <div class="project__paragraph">
+                     <p>Este projeto consiste em uma página inicial para uma agência de viagens fictícia,
+                        desenvolvida
+                        com o uso do Bootstrap 5. Destacam-se três principais recursos: um modal de "Fale
+                        Conosco"
+                        com
+                        efeito fade para facilitar o contato com a agência, um tema Dark Mode que permite aos
+                        usuários
+                        escolher entre os modos claro e escuro para uma experiência visual personalizada, e um
+                        carrossel
+                        automático que exibe destinos de viagem de forma atrativa.
+                        <br>Principais tecnologias utilizadas:<i class="fa-brands fa-square-js icones"
+                           title="JavaScript" style="color:#EFD81D; font-size:1.3rem;"></i><i
+                           class="fa-brands fa-bootstrap icones" title="Bootstrap"
+                           style="color:#7511F6; font-size:1.3rem;"></i>
+                     </p>
+                     <p>Disponível também:</p>
+                     <div class="link-github">
+
+                        <!-- pages -->
+                        <a href="https://ferrazjaa.github.io/viajar-Preciso/" target="_blank" rel="noopener noreferrer">
+                           <div class="tooltip">
+                              <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
+                              <span class="tooltiptext">GitHub Pages</span>
+                           </div>
+                        </a>
+
+                        <!-- repositório -->
+                        <a href="https://github.com/ferrazjaa/viajar-Preciso" target="_blank" rel="noopener noreferrer">
+                           <div class="tooltip">
+                              <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
+                              <span class="tooltiptext">Repositório</span>
+                           </div>
+                        </a>
+                     </div>
+
+                  </div>
+
+               </article>
+               <!-- fim da viajar é preciso -->
+
+               <!-- CARDÁPIO ------------------------------------------------------- -->
+               <article class="project projects__carousel--item">
+                  <h2>Cardápio</h2>
+                  <!-- bloco com codepen -->
+                  <div class="code-pen">
+                     <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="GRPGdxL"
+                        data-user="ferrazjaa">
+                        <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/GRPGdxL">
+                              Cardápio</a> by Jessica Ferraz (<a href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
+                           on <a href="https://codepen.io">CodePen</a>.</span>
+                     </p>
+                     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                  </div>
+
+                  <!-- paragrafo de explicação -->
+                  <div class="project__paragraph">
+                     <p>O projeto de cardápio de uma cafeteria criado com HTML5 e CSS3 para proporcionar uma
+                        experiência
+                        visualmente atraente e informativa aos clientes. Na página, você encontrará seções
+                        dedicadas
+                        aos
+                        diferentes tipos de cafés, salgados e sobremesas disponíveis.
+                        <br>Tecnologias utilizadas: <i class="fa-brands fa-html5 icones" title="HMTL5"
+                           style="color:#DF4C26;"></i><i class="fa-brands fa-css3-alt icones" title="CSS3"
+                           style="color: #254BDD;font-size: 1.3rem;"></i>
+                     </p>
+                     <p>Disponível também:</p>
+                     <div class="link-github">
+                        <!-- pages -->
+                        <a href="https://ferrazjaa.github.io/cardapio-cafeteria/" target="_blank"
+                           rel="noopener noreferrer">
+                           <div class="tooltip">
+                              <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
+                              <span class="tooltiptext">Github Pages</span>
+                           </div>
+                        </a>
+
+                        <!-- repositório -->
+                        <a href="https://github.com/ferrazjaa/cardapio-cafeteria" target="_blank"
+                           rel="noopener noreferrer">
+                           <div class="tooltip">
+                              <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
+
+                              <span class="tooltiptext">Repositório</span>
+                           </div>
+                        </a>
+                     </div>
+
+
+
+                  </div> <!--End project__paragraph-->
+
+               </article>
+               <!-- FIM DE CARDÁPIO -->
