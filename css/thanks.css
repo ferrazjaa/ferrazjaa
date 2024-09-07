@@ -1,66 +1,56 @@
 main{
-    width: 95%;
+    padding: 0 6%;
 }
 
-#obrigada{
-    width: 90%;
-    font-size: 2em;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 5%;
-    /* text-indent: 1.1em; */
+.thanks__title, .thanks__subtitle{
     font-weight: 500;
-    
-}
-
-p{
+    margin:auto;
     text-align: center;
-    font-size: 1.5em;
-    font-weight: 500;
-    margin-bottom: 5%;
-
 }
-
-.contato{
-    text-align: center;
-    
-   
-}
-
-.contato a{
-    font-size: 3em;
-    text-decoration: none;
-    color: inherit;
-    margin-bottom: 5%;
-}
-
-
-
-
-#me{
-    font-family: 'Hurricane', cursive;
-    text-align: end;
-    font-size: 7em;
-    font-weight: bold;
+.signature{
     color: black;
+    font-family: 'Hurricane', cursive;
+    font-weight: bold;
     margin: auto;
+    text-align: end;
 }
 
-@media(max-width:768px){
-    #obrigada{
-        font-size: 1.5em;
-        text-align: justify;
+.center{
+    text-align: center;
+}
+
+@media screen and (min-width:0px){
+    main{
+        margin-top: 3rem;
+    }      
+
+    .thanks__title{
+        font-size: 2rem;
     }
 
-    p{
-        font-size: 1.4em;
+    .thanks__subtitle{
+        font-size: 1.3rem;
     }
 
-    contato a{
-        font-size: 2em;
+    .signature{
+        font-size: 5rem;
+    }
+}
+@media screen and (min-width:728px){
+    main{
+        margin-top: 7rem;
+    }  
+    
+    .thanks__title{
+        font-size: 3rem;
     }
 
-    #me{
-        font-size: 3.5em;
+    .thanks__subtitle{
+        font-size: 2.3rem;
+        margin-bottom: 3.3rem;
+    }
+
+    .signature{
+        font-size: 7rem;
     }
 }

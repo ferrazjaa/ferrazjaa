@@ -8,10 +8,6 @@
   text-align: center;
 }
 
-.about__paragraph {
-  text-align: justify;
-}
-
 .about__address {
   text-align: center;
 }
@@ -74,12 +70,6 @@
     margin-bottom: 0.1rem;
   }
 
-  .about__paragraph {
-    font-size: 1.4rem;
-    padding: 1.2rem;
-    text-indent: 1.6rem;
-  }
-
   .about__address a {
     font-size: 3.5rem;
     margin-right: 2rem;
@@ -96,7 +86,7 @@
   }
 
   .service__description{
-    font-size: 1.4rem;
+    font-size: var(--min-font-size);
     padding: 0.5rem 1rem; /* Espaçamento interno */
     text-align: justify;
     text-indent: 1.4rem;
@@ -126,12 +116,6 @@
   .title {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
-  }
-
-  .about__paragraph {
-    font-size: 1.9rem;
-    padding: 1.7rem;
-    text-indent: 1.9rem;
   }
 
   .about__address a {
