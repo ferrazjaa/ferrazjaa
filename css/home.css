@@ -123,18 +123,14 @@
 @media screen and (min-width: 768px) {
   .home {
     align-content: space-between;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 42% 58%;
     grid-template-areas:
       "greet photo"
       "greet details"
-      "greet curriculum";
-    margin-top: 5rem;
-    height: 100vh;
+      "greet curriculum"
+    ;
+    /* height: 100vh; */
   }
-
-  /* .greetings, .home__titulo, .home__photo{
-        margin-top: 0rem;
-    } */
 
   .home__photo {
     justify-content: end;

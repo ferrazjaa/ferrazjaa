@@ -3,43 +3,21 @@
   height: 100vh;
 }
 
-/* SLIDES ******************************************/
-.projects__carousel {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.projects__carousel--inner {
+.projects__container{
   display: flex;
-  transition: transform 0.5s ease;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+ 
 }
-
-.projects__carousel--item {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+.project{
+  background-color: white;
+  border: 1px solid;
+  border-radius: 5%;
   padding: 2rem;
-  width: 100%;
-  border-radius: 0.8rem;
 }
 
-.code-pen {
-  width: 50%;
-}
 
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  font-size: 3rem;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-weight: 700;
-}
 
 /* ******************    MODAL   ********************* */
 .project__wrapper {
@@ -85,13 +63,11 @@
 }
 
 .modal__content {
-  border-radius: 4px;
-  position: relative;
-  width: 50%;
-  /* max-width: 90%; */
   background: var(--color-white);
-  padding: 5rem;
-  font-size: 1.6rem;
+  border-radius: 4px;
+  /* max-width: 90%; */
+  padding: 2.5rem;
+  position: relative;
   text-align: justify;
 }
 
@@ -123,33 +99,25 @@
 
 /* **************MEDIAS QUERIES *************************************************************** */
 @media screen and (min-width: 0px) {
-  .carousel-control.prev {
-    left: 10px;
-  }
-
-  .carousel-control.next {
-    right: 10px;
-  }
-
-  .code-pen {
-    height: 250px;
+  /* .code-pen {
+    height: 100px;
     width: 85%;
     
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) {
-  .carousel-control.prev {
-    left: 50px;
-  }
-  .carousel-control.next {
-    right: 50px;
+
+  /* .code-pen {
+    height: 200px;
+    width: 75%;
+  } */
+
+  .modal__content {
+    width: 50%;
   }
 
-  .code-pen {
-    height: 500px;
-    width: 75%;
-  }
+
 
   .tooltip .tooltiptext {
     visibility: hidden;

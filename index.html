@@ -66,7 +66,7 @@
    <header class="cabecalho">
 
       <!-- logo -->
-      <h1><a href="#" class="logo">Jessica Ferraz</a></h1>
+      <h1><a href="#home" class="logo">Jessica Ferraz</a></h1>
 
       <!-- Inicio menu -->
       <nav id="nav" class="menu">
@@ -87,7 +87,7 @@
             <li class="menu__item dropdown">
                <a href="javascript:void(0)" class="menu__link dropdown__botao"><i class="fa-solid fa-globe"></i></a>
                <div class="dropdown__conteudo">
-                  <a href="#" class="atual">Português</a>
+                  <a href="#home" class="atual">Português</a>
                   <a href="en/index.html">English</a>
                   <a href="it/index.html">Italiano</a>
                </div>
@@ -129,8 +129,6 @@
                         class="highlight highlight--white">log</span>( <span class="highlight highlight--red">'Ciao,
                         Mondo'</span> )
                   </a>
-
-
                </li> <!-- end italian item-->
 
             </ul> <!-- end greeting list-->
@@ -152,6 +150,7 @@
             class="home__curriculum">Currículo&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i>
          </a> <!-- end curriculum-->
 
+         <div style="clear: both;"></div>
 
       </section><!--Fim da seção home-->
 
@@ -176,7 +175,7 @@
                   </p>
 
                   <!-- redes sociais -->
-                  <address class=".base-social--address">
+                  <address class="base-social--address">
                      <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer"
                         class="social__media--link">
                         <i class="fa-brands fa-github"></i>
@@ -280,89 +279,167 @@
       <!--Section projects-->
       <section id="projects" class="projects">
          <h2 class="title">Projetos</h2>
+         <p class="base-paragraph">Conheça alguns dos meus projetos.</p>
 
-         <div class="projects__carousel">
-            <div class="projects__carousel--inner">
 
-               <!-- POMODORO ---------------------------------------------------------->
-               <article class="projects__carousel--item">
-                  <!-- project title ---------------- -->
-                  <h3 class="subtitle">Pomodoro</h3>
-                  <!-- codepen -->
-                  <div class="code-pen">
-                     <p class="codepen" 
-                     data-height="500" data-default-tab="result" data-slug-hash="VwqdxNg"
-                        data-user="ferrazjaa">
-                        <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/VwqdxNg">
-                              Pomodoro</a> by Jessica Ferraz (<a href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
-                           on <a href="https://codepen.io">CodePen</a>.</span>
-                     </p>
-                     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                  </div>
-                  <!-- fim da estrutura do codepen -->
+         <div class="projects__container">
+            <!-- POMODORO ---------------------------------------------------------->
+            <article class="project">
+               <!-- project title ---------------- -->
+               <h3 class="subtitle">Pomodoro</h3>
+
+               <!-- codepen -->
+               <div class="code-pen">
+                  <p class="codepen" data-height="200" data-default-tab="result" data-slug-hash="VwqdxNg"
+                     data-user="ferrazjaa">
+                     <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/VwqdxNg">
+                           Pomodoro</a> by Jessica Ferraz (<a href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+               </div><!-- fim da estrutura do codepen -->
+
+               <div id="summary" class="summary">
+                  <p class="summary-text">Pomodoro é um aplicativo que ajuda na concentração de trabalho. </p>
 
                   <!-- button modal -->
                   <div class="project__wrapper">
                      <a href="#project--modal"><i class="fa-solid fa-plus"></i></a>
                   </div><!-- end button modal -->
-
-                  <!-- modal structure -->
-                  <div id="project--modal" class="project__modal">
-                     <!-- texto de explicação -->
-                     <div class="modal__content">
-                        <h4>Pomodoro</h4>
-                        <p class="base-paragraph">Página de temporizador inspirada no método Pomodoro, que segue o ciclo tradicional de 25
-                           minutos
-                           de foco intenso em trabalho, seguidos por 5 minutos de intervalo. Para atender às
-                           preferências
-                           individuais dos usuários, também é possível personalizar o tempo de foco no trabalho.
-                           <br>Tecnologias utilizadas:<i class="fa-brands fa-html5 icones" title="HMTL5"
-                              style="color:#DF4C26;"></i><i class="fa-brands fa-css3-alt icones" title="CSS3"
-                              style="color: #254BDD;font-size: 1.3rem;"></i><i class="fa-brands fa-square-js icones"
-                              title="JavaScript" style="color:#EFD81D; font-size:1.3rem;"></i>
-
-                        </p>
-
-                        <p>Disponível também:</p>
-                        <!-- links para o github -->
-                        <div class="link-github">
-
-                           <!-- pages -->
-                           <a href="https://ferrazjaa.github.io/pomodoro/" target="_blank" rel="noopener noreferrer" class="project__paragraph--link">
-                              <div class="tooltip">
-                                 <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
-                                 <span class="tooltiptext">GitHub Pages</span>
-                              </div>
-                           </a>
-
-                           <!-- repositório -->
-                           <a href="https://github.com/ferrazjaa/pomodoro" target="_blank" rel="noopener noreferrer" class="project__paragraph--link">
-                              <!-- tooltip -->
-                              <div class="tooltip">
-                                 <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
-                                 <span class="tooltiptext">Repositório</span>
-                              </div>
-                              <!-- fim tooltip -->
-                           </a>
-                        </div>
-                        <!-- fim links github -->
-
-                        <a href="#" class="modal__close">&times;</a>
-                     </div><!-- fim parafrafo explicação -->
-
-                     
-
-                  </div> <!--end modal structure-->
-
-               </article>
-               <!-- Fim do projeto pomodoro -->
+               </div><!-- summary -->
 
 
-            </div><!--End carousel-inner-->
+               <!-- modal structure -->
+               <div id="project--modal" class="project__modal">
+                  <!-- texto de explicação -->
+                  <div class="modal__content">
+                     <h4>Pomodoro</h4>
+                     <p class="base-paragraph">Página de temporizador inspirada no método Pomodoro, que segue o ciclo
+                        tradicional de 25
+                        minutos
+                        de foco intenso em trabalho, seguidos por 5 minutos de intervalo. Para atender às
+                        preferências
+                        individuais dos usuários, também é possível personalizar o tempo de foco no trabalho.
+                        <br>Tecnologias utilizadas:<i class="fa-brands fa-html5 icones" title="HMTL5"
+                           style="color:#DF4C26;"></i><i class="fa-brands fa-css3-alt icones" title="CSS3"
+                           style="color: #254BDD;font-size: 1.3rem;"></i><i class="fa-brands fa-square-js icones"
+                           title="JavaScript" style="color:#EFD81D; font-size:1.3rem;"></i>
 
-            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-         </div> <!--End carousel projects-->
+                     </p>
+
+                     <p>Disponível também:</p>
+                     <!-- links para o github -->
+                     <div class="link-github">
+
+                        <!-- pages -->
+                        <a href="https://ferrazjaa.github.io/pomodoro/" target="_blank" rel="noopener noreferrer"
+                           class="project__paragraph--link">
+                           <div class="tooltip">
+                              <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
+                              <span class="tooltiptext">GitHub Pages</span>
+                           </div>
+                        </a>
+
+                        <!-- repositório -->
+                        <a href="https://github.com/ferrazjaa/pomodoro" target="_blank" rel="noopener noreferrer"
+                           class="project__paragraph--link">
+                           <!-- tooltip -->
+                           <div class="tooltip">
+                              <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
+                              <span class="tooltiptext">Repositório</span>
+                           </div>
+                           <!-- fim tooltip -->
+                        </a>
+                     </div>
+                     <!-- fim links github -->
+
+                     <a href="#" class="modal__close">&times;</a>
+                  </div><!-- fim parafrafo explicação -->
+                  
+               </div> <!--end modal structure-->
+            </article><!-- Fim do projeto pomodoro -->
+
+            <!-- Página Inicial Agencia de viagens -->
+            <article class="project">
+               <h3>Viajar é Preciso</h3>
+               <!-- codepen -->
+               <div class="code-pen">
+                  <p class="codepen" data-height="200" data-theme-id="dark" data-default-tab="result"
+                     data-slug-hash="abPQywb" data-user="ferrazjaa"
+                     style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                     <span>See the Pen <a href="https://codepen.io/ferrazjaa/pen/abPQywb">
+                           Viajar é preciso</a> by Jessica Ferraz (<a
+                           href="https://codepen.io/ferrazjaa">@ferrazjaa</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+               </div><!-- fim da estrutura do codepen -->
+
+               <!-- button modal -->
+               <div class="project__wrapper">
+                  <a href="#project--modal"><i class="fa-solid fa-plus"></i></a>
+               </div><!-- end button modal -->
+
+               <!-- modal structure -->
+               <div id="project--modal" class="project__modal">
+                  <!-- texto de explicação -->
+                  <div class="base-paragraph">
+                     <p>Este projeto consiste em uma página inicial para uma agência de viagens fictícia,
+                        desenvolvida
+                        com o uso do Bootstrap 5. Destacam-se três principais recursos: um modal de "Fale
+                        Conosco"
+                        com
+                        efeito fade para facilitar o contato com a agência, um tema Dark Mode que permite aos
+                        usuários
+                        escolher entre os modos claro e escuro para uma experiência visual personalizada, e um
+                        carrossel
+                        automático que exibe destinos de viagem de forma atrativa.
+                        <br>Principais tecnologias utilizadas:<i class="fa-brands fa-square-js icones"
+                           title="JavaScript" style="color:#EFD81D; font-size:1.3rem;"></i><i
+                           class="fa-brands fa-bootstrap icones" title="Bootstrap"
+                           style="color:#7511F6; font-size:1.3rem;"></i>
+                     </p>
+                     <p>Disponível também:</p>
+                     <div class="link-github">
+
+                        <!-- pages -->
+                        <a href="https://ferrazjaa.github.io/viajar-Preciso/" target="_blank" rel="noopener noreferrer">
+                           <div class="tooltip">
+                              <img src="img/icons8-browse-page-96.png" alt="GitHub Pages" title="GitHub Pages">
+                              <span class="tooltiptext">GitHub Pages</span>
+                           </div>
+                        </a>
+
+                        <!-- repositório -->
+                        <a href="https://github.com/ferrazjaa/viajar-Preciso" target="_blank" rel="noopener noreferrer">
+                           <div class="tooltip">
+                              <img src="img/icons8-repository-96.png" alt="Repositório" title="Repositório">
+                              <span class="tooltiptext">Repositório</span>
+                           </div>
+                        </a>
+                     </div>  <!-- fim link-github -->
+
+
+                     <a href="#" class="modal__close">&times;</a>
+                  </div>   <!-- fim base-paragraph -->
+
+                  
+               </div>   <!-- fim project__modal -->
+
+            </article>
+            <!-- fim da viajar é preciso -->
+
+         </div>
+
+
+
+
+
+
+
+
+
+
 
       </section><!--End section projects-->
 

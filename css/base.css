@@ -31,6 +31,7 @@ a {
 section {
   padding: 0 6%;
 }
+
 .base-social--address{
   display: flex;
   justify-content: center;
@@ -91,7 +92,7 @@ section {
 /* ***************MEDIAS QUERIES ************************************************************ */
 @media screen and (min-width: 0) {
   .about,
-  .projects {
+  .projects,.contact {
     margin-top: 3rem;
   }
 

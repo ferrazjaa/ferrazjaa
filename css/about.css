@@ -1,6 +1,8 @@
-.about{
+/* .about{
   height: 100vh;
-}
+  clear: both;
+}  */
+
 .title,
 .subtitle {
   font-weight: 500;
@@ -8,15 +10,9 @@
   text-align: center;
 }
 
-.about__address {
-  text-align: center;
-}
-.about__address a {
-  margin-left: auto;
-}
-
 /* ************************************************************* */
 .services {
+
   display: flex;
   flex-direction: column;
   margin: 0 auto; /* Centraliza o container */
@@ -70,11 +66,6 @@
     margin-bottom: 0.1rem;
   }
 
-  .about__address a {
-    font-size: 3.5rem;
-    margin-right: 2rem;
-  }
-
   .subtitle {
     font-size: 1.6rem;
     margin: 1.6rem auto;
@@ -85,12 +76,6 @@
     /* margin-top: 1rem; */
   }
 
-  .service__description{
-    font-size: var(--min-font-size);
-    padding: 0.5rem 1rem; /* Espaçamento interno */
-    text-align: justify;
-    text-indent: 1.4rem;
-  }
 }
 
 
@@ -109,18 +94,13 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .about {
-    margin-top: 5rem;
-  }
+  /* .about {
+    margin-top: 25rem;
+  } */
 
   .title {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
-  }
-
-  .about__address a {
-    font-size: 4rem;
-    margin-right: 2rem;
   }
 
   .subtitle {
@@ -131,9 +111,5 @@
   /* SERVICES *************************************** */
   .service__title {
     font-size: 1.6rem; /* Mais ajustes para telas ainda maiores */
-  }
-
-  .service__description {
-    font-size: 1.4rem; /* Ajuste final para a descrição */
   }
 }
