@@ -1,8 +1,3 @@
-/* .about{
-  height: 100vh;
-  clear: both;
-}  */
-
 .title,
 .subtitle {
   font-weight: 500;
@@ -20,7 +15,6 @@
 }
 
 .service__card {
-  /* background-color: rgb(153, 192, 152); */
   border-radius: 3%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   display: grid;
@@ -28,7 +22,7 @@
     "title"
     "description";
   /* grid-template-rows: 0.5fr 1fr; */
-  height: 5rem;
+  height: 5.5rem;
   overflow: hidden;
   padding: 1rem;
   place-items: center;
@@ -51,7 +45,7 @@
 
 .service__card:hover {
   border: 1px solid;
-  height: 12rem; /* Expande o cartão ao passar o mouse */
+  border-color: var(--color-blue);
   z-index: 10; /* Garante que o cartão fique acima dos outros */
 }
 
@@ -76,6 +70,14 @@
     /* margin-top: 1rem; */
   }
 
+  .service__description{
+    font-size: 1.2rem ;
+  }
+
+  .service__card:hover {
+    height: 12rem; /* Expande o cartão ao passar o mouse */
+  }
+
 }
 
 
@@ -94,9 +96,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  /* .about {
-    margin-top: 25rem;
-  } */
 
   .title {
     font-size: 2.5rem;
@@ -111,5 +110,13 @@
   /* SERVICES *************************************** */
   .service__title {
     font-size: 1.6rem; /* Mais ajustes para telas ainda maiores */
+  }
+
+  .service__description{
+    font-size: 1.4rem;
+  } 
+
+  .service__card:hover {
+    height: 15rem; /* Expande o cartão ao passar o mouse */
   }
 }

@@ -129,7 +129,7 @@
       "greet details"
       "greet curriculum"
     ;
-    /* height: 100vh; */
+    height: 100%; 
   }
 
   .home__photo {

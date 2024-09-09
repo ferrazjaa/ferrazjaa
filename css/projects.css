@@ -1,40 +1,44 @@
-/* CSS PROJETOS */
-.projects {
-  height: 100vh;
-}
-
 .projects__container{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-around;
- 
 }
+
 .project{
-  background-color: white;
-  border: 1px solid;
+  /* border: 1px solid; */
   border-radius: 5%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   padding: 2rem;
+  /* position: relative; */
+  transition: all 1s;
 }
 
+.project .subtitle{
+  margin: 0 auto 1rem auto;
+}
 
+/* .project:hover{
+  transform: scale(1.1);
+} */
 
 /* ******************    MODAL   ********************* */
 .project__wrapper {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
 .project__wrapper a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 15px;
   background-color: var(--color-blue);
   border-radius: 3px;
-  text-transform: uppercase;
   color: var(--color-dark-pink);
+  display: inline-block;
   font-weight: 500;
+  margin-top: 2rem;
+  padding: 12px;
+  /* position: absolute; */
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .project__wrapper:hover a {
@@ -66,6 +70,7 @@
   background: var(--color-white);
   border-radius: 4px;
   /* max-width: 90%; */
+  height: 100vh;
   padding: 2.5rem;
   position: relative;
   text-align: justify;
@@ -80,44 +85,54 @@
   font-size: 4rem;
 }
 
+
 /* ICONES PAGES E REPOSITÓRIO */
-.icones {
-  font-size: 1rem;
-  text-shadow: 2px 2px 5px black;
-}
 
 .link-github {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 
 
-.project__paragraph--link img {
-  width: 35%;
-}
 
 /* **************MEDIAS QUERIES *************************************************************** */
 @media screen and (min-width: 0px) {
-  /* .code-pen {
-    height: 100px;
-    width: 85%;
-    
-  } */
+  .icones {
+    font-size: 2.6rem;
+    /* text-shadow: 2px 2px 5px black;  */
+  }
+
+  .project__paragraph--link img {
+    width: 25%;
+  }
+
+  .projects__container{
+    gap: 2.5rem;
+  }
+  
+  .modal__content h4, .fa-plus{
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
 
-  /* .code-pen {
-    height: 200px;
-    width: 75%;
-  } */
-
+  .project{
+    width: 40%;
+  }
+  
+  .projects__container{
+    gap: 1.5rem;
+  }
   .modal__content {
     width: 50%;
   }
 
-
+  .modal__content h4, .fa-plus{
+    font-size: 1.9rem;
+  }
 
   .tooltip .tooltiptext {
     visibility: hidden;
@@ -137,4 +152,9 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+  .project__paragraph--link img {
+    width: 35%;
+  }
+  
 }
