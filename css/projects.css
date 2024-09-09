@@ -69,7 +69,6 @@
 .modal__content {
   background: var(--color-white);
   border-radius: 4px;
-  /* max-width: 90%; */
   height: 100vh;
   padding: 2.5rem;
   position: relative;
@@ -112,9 +111,13 @@
     gap: 2.5rem;
   }
   
+  .modal__content {
+    max-width: 90%;
+  }
   .modal__content h4, .fa-plus{
     font-size: 1.4rem;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -125,9 +128,6 @@
   
   .projects__container{
     gap: 1.5rem;
-  }
-  .modal__content {
-    width: 50%;
   }
 
   .modal__content h4, .fa-plus{

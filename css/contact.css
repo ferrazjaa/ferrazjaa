@@ -1,3 +1,4 @@
+
 .contact__paragraph {
   font-weight: 400;
   text-align: justify;
@@ -74,6 +75,9 @@ textarea {
 /* MEDIAS QUERIES ************************************ */
 
 @media screen and (min-width: 0) {
+  .contact{
+    margin-bottom: 3rem;
+  }
   label {
     font-size: 1.6rem;
   }
@@ -82,9 +86,13 @@ textarea {
     font-size: 1.6rem;
     padding: 1rem;
   }
+
 }
 
 @media screen and (min-width: 768px) {
+  .contact{
+    margin-bottom: 7rem;
+  }
   input {
     padding: 2%;
   }

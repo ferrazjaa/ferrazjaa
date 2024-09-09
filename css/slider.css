@@ -58,7 +58,7 @@
 }
 
 .slide img {
-  width: 30%; /* Ajuste para manter a imagem proporcional */
+  width: 40%; /* Ajuste para manter a imagem proporcional */
   height: auto;
 }
 
@@ -103,5 +103,10 @@
   .slide {
     width: 200px;
   }
+
+  .slide img {
+    width: 30%; /* Ajuste para manter a imagem proporcional */
+  }
+  
 }
 

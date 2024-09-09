@@ -1,64 +1,86 @@
-
-footer{
+footer {
     background-color: var(--color-blue);
-    text-align: center; 
-    margin-top: 5%;
-    padding:2.5%;
-    color:#FFFFEC;
-    font-weight: 400;
-}
-
-footer h2{
-    font-size: 1.2em;
-    margin-bottom: 2%;
-    font-weight: 400; 
+    color: var(--color-white);
+    padding: 20px;
+    text-align: center;
 
 }
 
-footer li{
-    margin-bottom: 1%;
-    font-size: 0.85em;
+.footer__content {
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer__content address .social__media--link, .references-list a {
+    color: var(--color-white);
+}
+
+.references-list a:hover{
+    border-bottom: 1px solid var(--color-dark-pink);
+}
+.references-list {
     list-style-type: none;
-    
+    text-align: justify;
 }
 
-footer a{
-    color: #FFFAF9 ;
-    text-decoration: none;
+.credits h4{
+    font-weight: 400;
+    text-align: justify;
 }
 
-
-footer a:visited{
-    color: #FFFAF9;
+.credits:last-child p{
+    margin-top: 2rem;
+    font-weight: 500;
 }
 
-footer a:hover{
-    transform: scale(1.1);
-}
+@media screen and (min-width:0) {
+    .credits {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
 
-footer span, footer .social-media{
-    font-size: 1.25em;
-  
-}
-
-footer .social-media a{
-    margin-left: 3%;
-}
-
-
-
-
-@media (min-width: 768px){
-  
-    footer .social-media a{
-        
-        font-size:2em;
+    .credits h4 {
+        margin: 1.4rem auto;
     }
 }
 
-@media(min-width:1024px){
-    .social-media{
-        font-size: 3em;
+@media screen and (min-width:760px) {
+    .credits {
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+
+    .credits h4 {
+        margin-top: 1.6rem;
     }
 }
 
+
+
+
+
+/* 
+.credits {
+  font-size: 14px;
+}
+
+.credits h4 {
+  margin-top: 20px;
+  color: var(--color-soft-blue);
+}
+
+
+
+.references-list li {
+  margin: 5px 0;
+}
+
+.references-list a {
+  color: var(--color-soft-blue);
+  text-decoration: none;
+}
+
+.references-list a:hover {
+  color: var(--color-dark-pink);
+}
+*/

@@ -34,7 +34,7 @@ section {
 
 .base-social--address{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 3rem;
 }
 .social__media--link {
