@@ -57,7 +57,7 @@
     <header class="cabecalho">
 
         <!-- logo -->
-        <h1><a href="index.html" class="logo">Jessica Ferraz</a></h1>
+        <h1><a href="index.html" class="logo" aria-label="Voltar para a página inicial">Jessica Ferraz</a></h1>
 
         <!-- Inicio menu -->
         <nav id="nav" class="menu">
@@ -65,16 +65,16 @@
             <ul class="menu__lista"> <!--início menu lista-->
 
                 <li class="menu__item">
-                    <a href="index.html" class="menu__link">Home</a>
+                    <a href="index.html" class="menu__link" aria-label="Voltar para a página inicial">Home</a>
                 </li>
 
-                <li class="menu__item dropdown">
-                    <a href="javascript:void(0)" class="menu__link dropdown__botao"><i
-                            class="fa-solid fa-globe"></i></a>
+                <li class="menu__item dropdown" aria-labelledby="dropdown-menu">
+                    <a href="javascript:void(0)" class="menu__link dropdown__botao" aria-haspopup="true"
+                        aria-expanded="false" aria-label="Selecione o idioma"><i class="fa-solid fa-globe"></i></a>
                     <div class="dropdown__conteudo">
-                        <a href="#" class="atual">Português</a>
-                        <a href="en/index.html">English</a>
-                        <a href="it/index.html">Italiano</a>
+                        <a href="index.html" class="atual" role="menuitem">Português</a>
+                        <a href="en/index.html" role="menuitem">English</a>
+                        <a href="it/index.html" role="menuitem">Italiano</a>
                     </div>
                 </li>
 
@@ -91,11 +91,13 @@
         <p class="base-paragraph center">Vamos manter contato!</p>
         <address class="base-social--address">
             <!-- github -->
-            <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer" class="social__media--link"> <i
-                    class="fa-brands fa-github"></i>&nbsp;&nbsp;</a>
+            <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer" class="social__media--link"
+                aria-label="GitHub"> <i class="fa-brands fa-github"></i>&nbsp;&nbsp;
+
+            </a>
             <!-- linkedin -->
 
-            <!-- <a href="https://www.linkedin.com/in/ferrazjaa/" target="_blank" rel="noopener noreferrer"> <i
+            <!-- <a href="https://www.linkedin.com/in/ferrazjaa/" target="_blank" rel="noopener noreferrer" class="social__media--link" aria-label="GitHub"> <i
                     class="fa-brands fa-linkedin"></i></a> -->
         </address>
 
@@ -105,41 +107,63 @@
 
 
     <footer>
-        <h2>Referências</h2>
-        <ul>
-            <li> Menu baseado em <a href="https://youtu.be/Dd6Z3gkud18?si=W7hDcmb3ljJQ92NR" target="_blank"
-                    rel="noopener noreferrer">Criando um menu hambúrguer - @Curso em Vídeo HTML5 e CSS3 por Curso em
-                    vídeo</a></li>
+        <div class="footer__content"> <!--footer_content-->
+            <address class="base-social--address">
+                <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer"
+                    class="social__media--link" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
 
-            <li>Paleta de cores consultada em: <a href="https://spec.draculatheme.com/" target="_blank"
-                    rel="noopener noreferrer">Dracula Syntax Highlighting Specification</a></li>
+                <a href="https://codepen.io/ferrazjaa" target="_blank" rel="noopener noreferrer"
+                    class="social__media--link" aria-label="CodePen">
+                    <i class="fa-brands fa-codepen"></i>
+                </a>
+            </address>
 
-            <li>Scrollbar baseado em: <a
-                    href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2"
-                    target="_blank" rel="noopener noreferrer">How To - Custom Scrollbar |W3 Schools </a></li>
+            <div class="credits">
+                <h4>Referências e Inspirações:</h4>
+                <ul class="references-list">
+                    <li>Favicon gerada por: <a href="https://favicon.io/" target="_blank"
+                            rel="noopener noreferrer">Favicon.io</a></li>
+                    <li>Reset CSS baseado em: <a href="https://www.joshwcomeau.com/css/custom-css-reset/"
+                            target="_blank" rel="noopener noreferrer">A modern CSS Reset</a> de <a
+                            href="https://www.joshwcomeau.com/" target="_blank" rel="noopener noreferrer">Joshua
+                            Comeau</a></li>
+                    <li>Logos de <a
+                            href="https://www.freepik.com/author/freepik/icons/brands-color_118#from_element=resource_detail"
+                            target="_blank" rel="noopener noreferrer">Icon by Freepik</a></li>
+                    <li>Scrollbar baseado em: <a href="https://codepen.io/DarthVeyda/pen/eLLbXa?editors=1100"
+                            target="_blank" rel="noopener noreferrer">CodePen Home Custom scrollbar with CSS
+                            triangles</a> de <a href="https://codepen.io/DarthVeyda" target="_blank"
+                            rel="noopener noreferrer">Anastasia Gavrylenko</a></li>
+                    <li>Card adaptado de: <a href="https://codepen.io/william-goldsworthy/pen/JzVajj?editors=1000"
+                            target="_blank" rel="noopener noreferrer">CSS-Tricks Card Carousel</a> de <a
+                            href="https://codepen.io/william-goldsworthy" target="_blank"
+                            rel="noopener noreferrer">William Goldsworthy</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_tooltip.asp" target="_blank"
+                            rel="noopener noreferrer">CSS tooltip | W3 Schools</a></li>
+                    <li><a href="https://icons8.com/icon/41146/browse-page" target="_blank"
+                            rel="noopener noreferrer">Browse page</a> icon by <a href="https://icons8.com"
+                            target="_blank" rel="noopener noreferrer">Icons8</a></li>
+                    <li><a href="https://icons8.com/icon/33281/repository" target="_blank"
+                            rel="noopener noreferrer">Repository</a> icon by <a href="https://icons8.com"
+                            target="_blank" rel="noopener noreferrer">Icons8</a></li>
+                    <li>Modal adaptado de: <a href="https://codepen.io/denic/pen/ZEbKgPp" target="_blank"
+                            rel="noopener noreferrer">CSS-only modal</a> de <a href="https://codepen.io/denic"
+                            target="_blank" rel="noopener noreferrer">Marko</a></li>
+                    <li><a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank"
+                            rel="noopener noreferrer">Libras: Integrando a uma Página Web por gov.br</a></li>
+                    <li><a href="https://youtu.be/2umsItNQ9mI?si=g0BKf7fJt6NJ4644" target="_blank"
+                            rel="noopener noreferrer">Como Enviar E-mails de um Formulário de Contato HTML por Tiger
+                            Codes</a></li>
+                    <li><a href="https://youtu.be/os7TDvp2XQ4?si=1aEa5gkdMtAX64J6" target="_blank"
+                            rel="noopener noreferrer">Enviar EMAIL 🔥 HTML - Formulário De Contato por Adriana Saty</a>
+                    </li>
+                </ul>
 
-            <li>Favicon gerada por: <a href="https://favicon.io/" target="_blank"
-                    rel="noopener noreferrer">Favicon.io</a> </li>
-
-            <li><a href="https://youtu.be/2umsItNQ9mI?si=g0BKf7fJt6NJ4644" target="_blank"
-                    rel="noopener noreferrer">Como Enviar E-mails de um Formulário de Contato HTML por Tiger Codes</a>
-            </li>
-
-            <li><a href="https://youtu.be/os7TDvp2XQ4?si=1aEa5gkdMtAX64J6" target="_blank"
-                    rel="noopener noreferrer">Enviar EMAIL 🔥 HTML - Formulário De Contato por Adriana Saty</a></li>
-        </ul>
-        <span>&copy; 2023 Jéssica Ferraz.</span>
-        <div class="social-media">
-            <!-- github -->
-            <a href="https://github.com/ferrazjaa" target="_blank" rel="noopener noreferrer"> <i
-                    class="fa-brands fa-github"></i>&nbsp;&nbsp;</a>
-            <!-- linkedin -->
-
-            <!-- <a href="https://www.linkedin.com/in/ferrazjaa/" target="_blank" rel="noopener noreferrer"> <i
-                    class="fa-brands fa-linkedin"></i></a> -->
-        </div>
-
-
+                <p>© 2024 Jessica Ferraz. Todos os direitos reservados.</p>
+            </div>
+        </div> <!--end footer__content-->
     </footer>
 
     <!-- ACESSIBILIDADE EM LIBRAS -->
