@@ -12,18 +12,37 @@
   --color-flame-scarlet: #d90023;
   --color-yellow: #f9ff00;
   font-size: 62.5%;
-  --gradiente: linear-gradient(to bottom right, #c96567, #0728319f);
+  --gradiente: linear-gradient(to bottom right, #004d4d, #da0051);
+
+  /* ]
+  background: linear-gradient(to top, #ffcc33, #ff9966, #ff6699, #cc6699, #663399);
+
+  to bottom right, #6A706E, #640125
+  to bottom right, #3F826D, #da0050
+  to bottom right, #041f1ed8, #640125
+  to bottom right, #004d4d, #da0051
+
+  to bottom right, #002626, #da0051
+
+  to bottom right, #002626, #580023, #da0051
+
+  linear-gradient(to bottom right, #114B5F,  #640126)
+
+  linear-gradient(to bottom right, rgba(0, 38, 38, 1), rgba(218, 0, 81, 0.8))
+  */
 }
 
 body {
-  background: var(--gradiente);
+  background: var(--gradiente); 
+  color: #f0f0f0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+
 a {
-  color: #080808db;
+  color: var(--color-white);
   cursor: pointer;
   text-decoration: none;
 }
@@ -33,6 +52,7 @@ section {
 }
 
 .base-social--address{
+  
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3rem;
@@ -45,7 +65,7 @@ section {
   transform: scale(1.5);
 }
 
-/* SCROLLBAR-----------------------------------  */
+/* SCROLLBAR *********************************************************************  */
 
 ::-webkit-scrollbar {
   width: 12px;
